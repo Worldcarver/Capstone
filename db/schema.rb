@@ -10,9 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_09_151522) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_09_160048) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "armors", force: :cascade do |t|
+    t.string "name"
+    t.string "bsgid"
+    t.string "armorclass"
+    t.string "materials"
+    t.string "protectionzones"
+    t.string "maxdurability"
+    t.string "effectivedurability"
+    t.string "movementspeedpentality"
+    t.string "turnspeedpenality"
+    t.string "ergonomicspenalty"
+    t.string "bluntthroughput"
+    t.string "repaircost"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
