@@ -1,0 +1,2 @@
+class AmmosController < ApplicationController
+end
