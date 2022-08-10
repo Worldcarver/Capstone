@@ -13,6 +13,8 @@ class CreateArmors < ActiveRecord::Migration[7.0]
       t.string :ergonomicspenalty
       t.string :bluntthroughput
       t.string :repaircost
+      t.string :image
+
 
       t.timestamps
     end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ammos, only: [:index]
   resources :armors, only: [:index]
   resources :users
   post "/login", to: "sessions#create"
