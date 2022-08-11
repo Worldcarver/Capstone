@@ -1,3 +1,3 @@
 class ArmorSerializer < ActiveModel::Serializer
-  attributes :id, :name, :bsgid, :armorclass, :materials, :protectionzones, :maxdurability, :effectivedurability, :movementspeedpentality, :turnspeedpenality, :ergonomicspenalty, :bluntthroughput, :repaircost
+  attributes :id, :name, :armorclass, :materials, :protectionzones, :maxdurability, :effectivedurability, :movementspeedpentality, :turnspeedpenality, :ergonomicspenalty, :bluntthroughput, :repaircost, :image
 end
