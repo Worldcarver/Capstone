@@ -3693,7 +3693,7 @@ Trader.create(
   "alias": "Prapor",
   "description": "Warrant officer in charge of supply warehouses on the sustaining base for the Internal Troops enforcing the Norvinsk region blockade. During the Contract Wars he secretly supplied the BEAR PMC operators with weapons, ammunition, and various other provisions he had at his disposal.",
   "salesCurrency": "RUB",
-  "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f6/PraporFullRes.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001021",
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749174093156402/PraporFullRes.webp",
   "loyalty": [
             {
                 "level": 1,
@@ -3727,7 +3727,7 @@ Trader.create(
   "alias": "Therapist",
   "description": "Head of the Trauma Care Department of the Tarkov Central City Hospital.",
   "salesCurrency": "RUB",
-  "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/39/TherapistFullRes.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001233",
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749444718043166/TherapistFullRes.webp",
   "loyalty": [
     {
         "level": 1,
@@ -3787,7 +3787,7 @@ Trader.create(
                 "requiredSales": 2600000
             }
         ],
-  "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/SkierFullRes.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001355"
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749605854826556/SkierFullRes.webp"
 )
 Trader.create(
   "name": "Tadeusz Pilsudski",
@@ -3820,7 +3820,7 @@ Trader.create(
                 "requiredSales": 32000
             }
         ],
-        "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dd/PeacekeeperFullRes.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001502"
+        "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749730098487426/PeacekeeperFullRes.webp"
 )
 Trader.create(
   "name": "Sergey Arsenyevich Samoylov",
@@ -3853,7 +3853,7 @@ Trader.create(
                 "requiredSales": 2500000
             }
         ],
-        "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0d/Sergey_Arsenyevich_Samoylov.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001534"
+        "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750070445281382/Sergey_Arsenyevich_Samoylov.webp"
 )
 Trader.create(
   "name": "Abramyan Arshavir Sarkisivich",
@@ -3886,7 +3886,7 @@ Trader.create(
           "requiredSales": 2500000
       }
   ],
-  "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/Ragpickerbanner.jpg/revision/latest/scale-to-width-down/1000?cb=20180417002456"
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750186799468594/Ragpickerbanner.webp"
 )
 Trader.create(
   "name": "Ivan Egorovich Kharitonov",
@@ -3919,7 +3919,7 @@ Trader.create(
                 "requiredSales": 2300000
             }
         ],
-      "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bd/Jaeger.jpg/revision/latest/scale-to-width-down/1000?cb=20190214161011"
+      "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750352206041168/Jaeger.webp"
 )
 Trader.create(
   "name": "<unknown>",
@@ -3940,7 +3940,7 @@ Trader.create(
                 "requiredSales": 0
             }
           ],
-          "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/FenceFullRes.png/revision/latest/scale-to-width-down/1000?cb=20190224001434"
+          "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750462574952548/FenceFullRes.webp"
 )
 
 Quest.create(
