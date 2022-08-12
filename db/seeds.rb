@@ -16,11 +16,11 @@ puts "seeding"
         # request["Content-Type"] = 'application/json'
         # request["AUTH-TOKEN"] = 
         
-        # response = JSON.parse(request.body)["results"]
+        # response = JSON.parse(request.body["results"]
         # puts response.read_body
         # armors = response
 
-    #     api_data = { key: api_k
+    #   )  api_data = { key: api_k
         #     armor_url = "https://api.tarkov-changes.com/v1/armor"
     #     armor_data = RestClient.get("https://api.tarkov-changes.com/v1/armor", headers ={"AUTH-TOKEN": )"#{api_data[:key]}"}) 
     
@@ -47,7 +47,38 @@ puts "seeding"
     # end
 
     # armor_fetch()
-
+Map.create(
+  "name": "Customs",
+  "image": "https://tarkov.dev/maps/customs-monkix3.jpg"
+)
+Map.create(
+  "name": "Factory",
+  "image": "https://tarkov.dev/maps/factory.jpg"
+)
+Map.create(
+  "name": "Interchange",
+  "image": "https://tarkov.dev/maps/interchange.jpg"
+)
+Map.create(
+  "name": "Labs",
+  "image": "https://tarkov.dev/maps/labs.jpg"
+)
+Map.create(
+  "name": "Lighthouse",
+  "image": "https://tarkov.dev/maps/lighthouse-landscape.jpg"
+)
+Map.create(
+  "name": "Reserve",
+  "image": "https://tarkov.dev/maps/reserve.jpg"
+)
+Map.create(
+  "name": "Shoreline",
+  "image": "https://tarkov.dev/maps/shoreline.jpg"
+)
+Map.create(
+  "name": "Woods",
+  "image": "https://tarkov.dev/maps/woods.jpg"
+)
 Armor.create(
     name: "BNTI Module-3M body armor",
     armorclass: "2",
@@ -3657,3 +3688,1510 @@ puts "seeding armor done"
       "recoil": -29,
       "initialSpeed": 455
 )
+Trader.create(
+  "name": "Pavel Yegorovich Romanenko",
+  "alias": "Prapor",
+  "description": "Warrant officer in charge of supply warehouses on the sustaining base for the Internal Troops enforcing the Norvinsk region blockade. During the Contract Wars he secretly supplied the BEAR PMC operators with weapons, ammunition, and various other provisions he had at his disposal.",
+  "salesCurrency": "RUB",
+  "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f6/PraporFullRes.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001021",
+  "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 15,
+                "requiredReputation": 0.2,
+                "requiredSales": 750000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 26,
+                "requiredReputation": 0.35,
+                "requiredSales": 1500000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 36,
+                "requiredReputation": 0.5,
+                "requiredSales": 2300000
+            }
+          ]
+  
+)
+Trader.create(
+  "name": "Elvira Khabibullina",
+  "alias": "Therapist",
+  "description": "Head of the Trauma Care Department of the Tarkov Central City Hospital.",
+  "salesCurrency": "RUB",
+  "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/39/TherapistFullRes.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001233",
+  "loyalty": [
+    {
+        "level": 1,
+        "requiredLevel": 1,
+        "requiredReputation": 0,
+        "requiredSales": 0
+    },
+    {
+        "level": 2,
+        "requiredLevel": 13,
+        "requiredReputation": 0.15,
+        "requiredSales": 400000
+    },
+    {
+        "level": 3,
+        "requiredLevel": 24,
+        "requiredReputation": 0.3,
+        "requiredSales": 700000
+    },
+    {
+        "level": 4,
+        "requiredLevel": 35,
+        "requiredReputation": 0.6,
+        "requiredSales": 900000
+    }
+    ]
+  
+)
+Trader.create(
+  "name": "Alexander Fyodorovich Kiselyov",
+  "alias": "Skier",
+  "description": "Port zone customs terminal employee. Initially dealing in the terminal's goods, over the course of conflict put together a gang to grab everything he could put his hands on in the vicinity of the terminal.",
+  "salesCurrency": "RUB",
+  "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 15,
+                "requiredReputation": 0.2,
+                "requiredSales": 800000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 28,
+                "requiredReputation": 0.4,
+                "requiredSales": 1600000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 38,
+                "requiredReputation": 0.75,
+                "requiredSales": 2600000
+            }
+        ],
+  "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/SkierFullRes.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001355"
+)
+Trader.create(
+  "name": "Tadeusz Pilsudski",
+  "alias": "Peacekeeper",
+  "description": "UN peacekeeping force supplies officer, based in one of the central checkpoints leading to the Tarkov port zone. The blue helmets have been venturing into small deals from the very beginning, buying everything of value in exchange for western weapons, ammo and some kinds of military equipment.",
+  "salesCurrency": "USD",
+        "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 14,
+                "requiredReputation": 0,
+                "requiredSales": 11000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 23,
+                "requiredReputation": 0.3,
+                "requiredSales": 25000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 37,
+                "requiredReputation": 0.6,
+                "requiredSales": 32000
+            }
+        ],
+        "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dd/PeacekeeperFullRes.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001502"
+)
+Trader.create(
+  "name": "Sergey Arsenyevich Samoylov",
+  "alias": "Mechanic",
+  "description": "Chemical plant foreman before conflict, from its very beginning he took to weapon modification works and repairs and maintenance of complex equipment and tech. He prefers clandestine solo living and operates discreetly, placing complicated and challenging tasks above everything.",
+  "salesCurrency": "RUB",
+  "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 20,
+                "requiredReputation": 0.15,
+                "requiredSales": 750000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 30,
+                "requiredReputation": 0.3,
+                "requiredSales": 1600000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 40,
+                "requiredReputation": 0.6,
+                "requiredSales": 2500000
+            }
+        ],
+        "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0d/Sergey_Arsenyevich_Samoylov.jpg/revision/latest/scale-to-width-down/1000?cb=20180417001534"
+)
+Trader.create(
+  "name": "Abramyan Arshavir Sarkisivich",
+  "alias": "Ragman",
+  "description": "Abramyan Arshavir Sarkisivich aka Ragman. He worked as a director in a big market located in Tarkov's suburb. Sells everything related to clothing and gear.",
+  "salesCurrency": "RUB",
+  "loyalty": [
+      {
+          "level": 1,
+          "requiredLevel": 1,
+          "requiredReputation": 0,
+          "requiredSales": 0
+      },
+      {
+          "level": 2,
+          "requiredLevel": 17,
+          "requiredReputation": 0,
+          "requiredSales": 750000
+      },
+      {
+          "level": 3,
+          "requiredLevel": 32,
+          "requiredReputation": 0.3,
+          "requiredSales": 1600000
+      },
+      {
+          "level": 4,
+          "requiredLevel": 42,
+          "requiredReputation": 0.6,
+          "requiredSales": 2500000
+      }
+  ],
+  "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/71/Ragpickerbanner.jpg/revision/latest/scale-to-width-down/1000?cb=20180417002456"
+)
+Trader.create(
+  "name": "Ivan Egorovich Kharitonov",
+  "alias": "Jaeger",
+  "description": "Kharitonov Ivan Egorovich aka Jaeger. He worked in the forest hunting property of the Priozersky reserve under the State Jaegers Service. Professional hunter and survival specialist. He guarded and guards, no matter what, his jaeger's ground from various aggressive individuals.",
+  "salesCurrency": "RUB",
+        "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 15,
+                "requiredReputation": 0.2,
+                "requiredSales": 750000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 22,
+                "requiredReputation": 0.35,
+                "requiredSales": 1500000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 33,
+                "requiredReputation": 0.5,
+                "requiredSales": 2300000
+            }
+        ],
+      "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bd/Jaeger.jpg/revision/latest/scale-to-width-down/1000?cb=20190214161011"
+)
+Trader.create(
+  "name": "<unknown>",
+  "alias": "Fence",
+  "description": "The conflict had barely started when Fence had already started setting up anonymous outlets for buying and selling goods. Keeping incognito, he nevertheless managed to put together a well-organised smuggler network operating all over Norvinsk region.",
+  "salesCurrency": "RUB",
+  "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 1,
+                "requiredReputation": 6,
+                "requiredSales": 0
+            }
+          ],
+          "image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/FenceFullRes.png/revision/latest/scale-to-width-down/1000?cb=20190224001434"
+)
+
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Debut",
+	"trader_id": 1,
+	"title": "Debut"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Checking",
+	"trader_id": 1,
+	 "title": "Checking"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Shootout_picnic",
+	"trader_id": 1,
+	 "title": "Shootout picnic"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Delivery_from_the_past",
+	"trader_id": 1,
+	 "title": "Delivery from the past"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/BP_depot",
+	"trader_id": 1,
+	 "title": "BP depot"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Bad_rep_evidence",
+	"trader_id": 1,
+	 "title": "Bad rep evidence"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Ice_cream_cones",
+	"trader_id": 1,
+	 "title": "Ice cream cones"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Postman_Pat_-_Part_1",
+	"trader_id": 1,
+	 "title": "Postman Pat"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Shaking_up_the_Teller",
+	"trader_id": 1,
+	 "title": "Shaking up teller"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Perfect_mediator",
+	"trader_id": 1,
+	 "title": "Perfect mediator"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Grenadier",
+	"trader_id": 1,
+	 "title": "Grenadier"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Insomnia",
+	"trader_id": 1,
+	 "title": "Insomnia"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Test_drive_-_Part_1",
+	"trader_id": 1,
+	 "title": "Test drive. Pt. 1"
+)
+
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_1",
+	"trader_id": 1,
+	 "title": "The Punisher - Part 1"
+)
+
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_2",
+	"trader_id": 1,
+	 "title": "The Punisher - Part 2"
+)
+
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_3",
+	"trader_id": 1,
+	 "title": "The Punisher - Part 3"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_4",
+	"trader_id": 1,
+	 "title": "The Punisher - Part 4"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_5",
+	"trader_id": 1,
+	 "title": "The Punisher - Part 5"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_6",
+	"trader_id": 1,
+	 "title": "The Punisher - Part 6"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Shortage",
+	"trader_id": 2,
+	 "title": "Shortage"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Sanitary_Standards_-_Part_1",
+	"trader_id": 2,
+	 "title": "Sanitary Standards - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Sanitary_Standards_-_Part_2",
+	"trader_id": 2,
+	 "title": "Sanitary Standards - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Painkiller",
+	"trader_id": 2,
+	 "title": "Painkiller"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Pharmacist",
+	"trader_id": 2,
+	 "title": "Pharmacist"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Supply_plans",
+	"trader_id": 2,
+	 "title": "Supply plans"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Kind_of_sabotage",
+	"trader_id": 3,
+	 "title": "Kind of sabotage"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/General_wares",
+	"trader_id": 2,
+	 "title": "General wares"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Car_repair",
+	"trader_id": 2,
+	 "title": "Car repair"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_1",
+	"trader_id": 2,
+	 "title": "Health Care Privacy - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_2",
+	"trader_id": 2,
+	 "title": "Health Care Privacy - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_3",
+	"trader_id": 2,
+	 "title": "Health Care Privacy - Part 3"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_4",
+	"trader_id": 2,
+	 "title": "Health Care Privacy - Part 4"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_5",
+	"trader_id": 2,
+	 "title": "Health Care Privacy - Part 5"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Decontamination_service",
+	"trader_id": 2,
+	 "title": "Decontamination Service"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Private_clinic",
+	"trader_id": 2,
+	 "title": "Private clinic"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Athlete",
+	"trader_id": 2,
+	 "title": "Athlete"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Supplier",
+	"trader_id": 3,
+	 "title": "Supplier"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Extortionist",
+	"trader_id": 3,
+	 "title": "The Extortionist"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/What%27s_on_the_flash_drive%3F",
+	"trader_id": 3,
+	 "title": "What's on the flash drive?"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Golden_Swag",
+	"trader_id": 3,
+	"title": "Golden swag"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Chemical_-_Part_1",
+	"trader_id": 3,
+	"title": "Chemical - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Chemical_-_Part_2",
+	"trader_id": 3,
+	"title": "Chemical - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Chemical_-_Part_3",
+	"trader_id": 3,
+	"title": "Chemical - Part 3"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Chemical_-_Part_4",
+	"trader_id": 3,
+	 "title": "Chemical - Part 4"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Vitamins_-_Part_1",
+	"trader_id": 3,
+	 "title": "Vitamins - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Vitamins_-_Part_2",
+	"trader_id": 3,
+	 "title": "Vitamins - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Friend_from_the_West_-_Part_1",
+	"trader_id": 3,
+	 "title": "Friend from the West - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Friend_from_the_West_-_Part_2",
+	"trader_id": 3,
+	 "title": "Friend from the West - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Lend_lease_-_Part_1",
+	"trader_id": 3,
+	 "title": "Lend lease - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Lend_lease_-_Part_2",
+	"trader_id": 4,
+	 "title": "Lend lease - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Peacekeeping_mission",
+	"trader_id": 4,
+	 "title": "Peacekeeping mission"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Informed_means_armed",
+	"trader_id": 3,
+	 "title": "Informed means armed"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Chumming",
+	"trader_id": 3,
+	 "title": "Chumming"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Silent_caliber",
+	"trader_id": 3,
+	 "title": "Silent caliber"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Flint",
+	"trader_id": 3,
+	 "title": "Flint"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Bullshit",
+	"trader_id": 3,
+	 "title": "Bullshit"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Setup",
+	"trader_id": 3,
+	 "title": "Setup"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Fishing_Gear",
+	"trader_id": 4,
+	 "title": "Fishing Gear"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Tigr_Safari",
+	"trader_id": 4,
+	 "title": "Tigr Safari"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Scrap_Metal",
+	"trader_id": 4,
+	 "title": "Scrap Metal"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Eagle_Eye",
+	"trader_id": 4,
+	 "title": "Eagle Eye"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Humanitarian_Supplies",
+	"trader_id": 4,
+	 "title": "Humanitarian Supplies"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Cult_-_Part_1",
+	"trader_id": 4,
+	 "title": "The Cult - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Cult_-_Part_2",
+	"trader_id": 4,
+	 "title": "The Cult - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_1",
+	"trader_id": 4,
+	 "title": "Spa Tour - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_2",
+	"trader_id": 4,
+	 "title": "Spa Tour - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_3",
+	"trader_id": 4,
+	 "title": "Spa Tour - Part 3"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_4",
+	"trader_id": 4,
+	 "title": "Spa Tour - Part 4"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_5",
+	"trader_id": 4,
+	 "title": "Spa Tour - Part 5"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_6",
+	"trader_id": 4,
+	 "title": "Spa Tour - Part 6"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Spa_Tour_-_Part_7",
+	"trader_id": 4,
+	 "title": "Spa Tour - Part 7"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Cargo_X_-_Part_1",
+	"trader_id": 4,
+	 "title": "Cargo X - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Cargo_X_-_Part_2",
+	"trader_id": 4,
+	 "title": "Cargo X - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Cargo_X_-_Part_3",
+	"trader_id": 4,
+	 "title": "Cargo X - Part 3"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_1",
+	"trader_id": 4,
+	 "title": "Wet Job - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_2",
+	"trader_id": 4,
+	 "title": "Wet Job - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_3",
+	"trader_id": 4,
+	 "title": "Wet Job - Part 3"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_4",
+	"trader_id": 4,
+	 "title": "Wet Job - Part 4"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_5",
+	"trader_id": 4,
+	 "title": "Wet Job - Part 5"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Wet_Job_-_Part_6",
+	"trader_id": 4,
+	 "title": "Wet Job - Part 6"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Psycho_Sniper",
+	"trader_id": 5,
+	 "title": "Psycho Sniper"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/The_guide",
+	"trader_id": 4,
+	 "title": "The guide"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_1",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 1"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_2",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 2"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_3",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 3"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_4",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 4"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_5",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 5"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_6",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 6"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_7",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 7"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_8",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 8"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_9",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 9"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_10",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 10"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_11",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 11"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_12",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 12"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_13",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 13"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_14",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 14"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_15",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 15"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_16",
+	"trader_id": 5,
+	 "title": "Gunsmith - Part 16"
+)
+Quest.create(
+	"wiki": "https://escapefromtarkov.fandom.com/wiki/Signal_-_Part_1",
+	"trader_id": 5,
+	 "title": "Signal - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Signal_-_Part_2",
+	"trader_id": 5,
+	 "title": "Signal - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Signal_-_Part_3",
+	"trader_id": 5,
+	 "title": "Signal - Part 3"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Signal_-_Part_4",
+	"trader_id": 5,
+ "title": "Signal - Part 4"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Scout",
+	"trader_id": 5,
+	 "title": "Scout"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Insider",
+	"trader_id": 5,
+	 "title": "Insider"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Farming_-_Part_1",
+	"trader_id": 5,
+	 "title": "Farming - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Farming_-_Part_2",
+	"trader_id": 5,
+	 "title": "Farming - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Farming_-_Part_3",
+	"trader_id": 5,
+	 "title": "Farming - Part 3"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Farming_-_Part_4",
+	"trader_id": 5,
+	 "title": "Farming - Part 4"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Import",
+	"trader_id": 5,
+	 "title": "Import"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Fertilizers",
+	"trader_id": 5,
+	 "title": "Fertilizers"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/A_Shooter_Born_in_Heaven",
+	"trader_id": 5,
+	 "title": "A Shooter Born in Heaven"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Only_business",
+	"trader_id": 6,
+	 "title": "Only business"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Big_sale",
+	"trader_id": 6,
+	 "title": "Big sale"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_1",
+	"trader_id": 6,
+	 "title": "The Blood of War - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Dressed_to_kill",
+	"trader_id": 6,
+	 "title": "Dressed to kill"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_1",
+	"trader_id": 6,
+	 "title": "Database - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_2",
+	"trader_id": 6,
+	 "title": "Database - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Gratitude",
+	"trader_id": 6,
+	 "title": "Gratitude"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Sales_Night",
+	"trader_id": 6,
+	 "title": "Sales Night"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Supervisor",
+	"trader_id": 6,
+	 "title": "Supervisor"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Hot_delivery",
+	"trader_id": 6,
+	 "title": "Hot Delivery"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Scavenger",
+	"trader_id": 6,
+	 "title": "Scavenger"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Make_ULTRA_Great_Again",
+	"trader_id": 6,
+	 "title": "Make ULTRA Great Again"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Minibus",
+	"trader_id": 6,
+	 "title": "Minibus"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Sew_it_good_-_Part_1",
+	"trader_id": 6,
+	 "title": "Sew it good - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Sew_it_good_-_Part_2",
+	"trader_id": 6,
+	 "title": "Sew it good - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Sew_it_good_-_Part_3",
+	"trader_id": 6,
+	 "title": "Sew it good - Part 3"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Sew_it_good_-_Part_4",
+	"trader_id": 6,
+	 "title": "Sew it good - Part 4"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Charisma_brings_success",
+	"trader_id": 6,
+	 "title": "Charisma brings success"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/No_fuss_needed",
+	"trader_id": 6,
+	 "title": "No fuss needed"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_2",
+	"trader_id": 6,
+	 "title": "The Blood of War - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_3",
+	"trader_id": 6,
+	 "title": "The Blood of War - Part 3"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Living_High_is_Not_a_Crime_-_Part_1",
+	"trader_id": 6,
+	 "title": "Living high is not a crime - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Living_High_is_Not_a_Crime_-_Part_2",
+	"trader_id": 6,
+	 "title": "Living high is not a crime - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Introduction",
+	"trader_id": 5,
+	 "title": "Introduction",
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Acquaintance",
+	"trader_id": 7,
+	 "title": "Acquaintance"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Survivalist_Path_-_Unprotected_but_Dangerous",
+	"trader_id": 7,
+	 "title": "The survivalist path - Unprotected, but dangerous"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_survivalist_path_-_Thrifty",
+	"trader_id": 7,
+	 "title": "The survivalist path - Thrifty"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_survivalist_path_-_Zhivchik",
+	"trader_id": 7,
+	 "title": "The survivalist path - Zhivchik"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_survivalist_path_-_Wounded_beast",
+	"trader_id": 7,
+	 "title": "The survivalist path - Wounded beast"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_survivalist_path_-_Tough_guy",
+	"trader_id": 7,
+	 "title": "The survivalist path - Tough guy"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Courtesy_visit",
+	"trader_id": 7,
+	 "title": "Courtesy visit"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Nostalgia",
+	"trader_id": 7,
+	 "title": "Nostalgia"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_shooter_-_Part_1",
+	"trader_id": 7,
+	 "title": "The Tarkov shooter - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_shooter_-_Part_2",
+	"trader_id": 7,
+	 "title": "The Tarkov shooter - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_shooter_-_Part_3",
+	"trader_id": 7,
+	 "title": "The Tarkov shooter - Part 3"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_shooter_-_Part_4",
+	"trader_id": 7,
+	 "title": "The Tarkov shooter - Part 4"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_shooter_-_Part_5",
+	"trader_id": 7,
+	 "title": "The Tarkov shooter - Part 5"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_shooter_-_Part_6",
+	"trader_id": 7,
+	 "title": "The Tarkov shooter - Part 6"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_shooter_-_Part_7",
+	"trader_id": 7,
+	 "title": "The Tarkov shooter - Part 7"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Tarkov_shooter_-_Part_8",
+	"trader_id": 7,
+	 "title": "The Tarkov shooter - Part 8"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_survivalist_path_-_Cold_blooded",
+	"trader_id": 7,
+	 "title": "The survivalist path - Cold blooded"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Colleagues_-_Part_2",
+	"trader_id": 2,
+	 "title": "Colleagues - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Colleagues_-_Part_3",
+	"trader_id": 2,
+	 "title": "Colleagues - Part 3"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_survivalist_path_-_Combat_medic",
+	"trader_id": 7,
+	 "title": "The survivalist path - Combat medic"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Ambulance",
+	"trader_id": 7,
+	 "title": "Ambulance",
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Secured_Perimeter",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Secured perimeter"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Reserve_(Quest)",
+	"trader_id": 7,
+	 "title": "Reserve"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Forest_Cleaning",
+	"trader_id": 7,
+	 "title": "The Huntsman Path - Forest Cleaning"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Controller",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Controller"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Evil_Watchman",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Evil watchman"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Fishing_place",
+	"trader_id": 7,
+	 "title": "Fishing place"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Trophy",
+	"trader_id": 7,
+	 "title": "The Huntsman Path - Trophy"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Justice",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Justice"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Sellout",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Sellout"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Woods_Keeper",
+	"trader_id": 7,
+	 "title": "The Huntsman Path - Woods Keeper"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Eraser_-_Part_1",
+"trader_id": 7,
+	 "title": "The Huntsman path - Eraser - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Eraser_-_Part_2",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Eraser - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Hunting_trip",
+	"trader_id": 7,
+	 "title": "Hunting trip"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Operation_Aquarius_-_Part_1",
+	"trader_id": 2,
+	 "title": "Operation Aquarius - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Operation_Aquarius_-_Part_2",
+	"trader_id": 2,
+	 "title": "Operation Aquarius - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Polikhim_hobo",
+	"trader_id": 1,
+	 "title": "Polikhim hobo"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Regulated_materials",
+	"trader_id": 1,
+	 "title": "Regulated materials"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Stirrup",
+	"trader_id": 3,
+	 "title": "Stirrup"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Mentor",
+	"trader_id": 4,
+	 "title": "Mentor"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Bad_habit",
+	"trader_id": 5,
+	 "title": "Bad habit"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_key_to_success",
+	"trader_id": 6,
+	 "title": "The key to success"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Shady_business",
+	"trader_id": 7,
+	 "title": "Shady Business"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Postman_Pat_-_Part_2",
+	"trader_id": 2,
+	 "title": "Postman Pat - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Out_of_curiosity",
+	"trader_id": 2,
+	 "title": "Out of curiosity"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Big_customer",
+	"trader_id": 1,
+	 "title": "Big customer"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_survivalist_path_-_Junkie",
+	"trader_id": 7,
+	 "title": "The survivalist path - Junkie"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_1",
+	"trader_id": 6,
+	 "title": "Textile - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_2",
+	"trader_id": 6,
+	 "title": "Textile - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Anesthesia",
+	"trader_id": 1,
+	 "title": "Anesthesia"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Colleagues_-_Part_1",
+	"trader_id": 2,
+	 "title": "Colleagues - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Rigged_game",
+	"trader_id": 3,
+	 "title": "Rigged game"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Chemistry_closet",
+	"trader_id": 5,
+	 "title": "Chemistry closet"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Samples",
+	"trader_id": 4,
+	 "title": "Samples"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/TerraGroup_employee",
+	"trader_id": 4,
+	 "title": "TerraGroup employee"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Sadist",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Sadist"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_bunker_-_Part_1",
+	"trader_id": 1,
+	 "title": "The bunker - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_bunker_-_Part_2",
+	"trader_id": 1,
+	 "title": "The bunker - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Search_mission",
+	"trader_id": 1,
+	 "title": "Search mission"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_stylish_one",
+	"trader_id": 6,
+	 "title": "The stylish one"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_survivalist_path_-_Eagle-owl",
+	"trader_id": 7,
+	 "title": "The survivalist path - Eagle-owl"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Collector",
+	"trader_id": 8,
+	 "title": "Collector"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/An_Apple_a_Day_Keeps_the_Doctor_Away",
+	"trader_id": 2,
+	 "title": "An apple a day - keeps the doctor away"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Hunter",
+	"trader_id": 7,
+	 "title": "Hunter"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/No_offence",
+	"trader_id": 1,
+	 "title": "No offence"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Trust_regain",
+	"trader_id": 2,
+	 "title": "Trust regain"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Loyalty_buyout",
+	"trader_id": 3,
+	 "title": "Loyalty buyout"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Hippocratic_Oath",
+	"trader_id": 2,
+	 "title": "Hippocratic Oath"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Disease_history",
+	"trader_id": 2,
+	 "title": "Disease history"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/A_Fuel_Matter",
+	"trader_id": 6,
+	 "title": "A fuel matter"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Surplus_goods",
+	"trader_id": 5,
+	 "title": "Surplus Goods"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Back_door",
+	"trader_id": 5,
+	 "title": "Back door"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Revision_-_Part_1",
+	"trader_id": 4,
+	 "title": "Revision - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Classified_Technologies",
+	"trader_id": 4,
+	 "title": "Classified technologies"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Inventory_check",
+	"trader_id": 6,
+	 "title": "Inventory check"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/No_Place_for_Renegades",
+	"trader_id": 1,
+	 "title": "No Place for Renegades"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Documents",
+	"trader_id": 1,
+	 "title": "Documents"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Safe_corridor",
+	"trader_id": 3,
+	 "title": "Safe corridor"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Factory_Chief",
+	"trader_id": 7,
+	 "title": "The Huntsman Path - Factory Chief"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Pest_control",
+	"trader_id": 7,
+	 "title": "Pest control"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Capturing_Outposts",
+	"trader_id": 1,
+	 "title": "Capturing Outposts"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Intimidator",
+	"trader_id": 1,
+	 "title": "Intimidator"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Calibration",
+	"trader_id": 5,
+	 "title": "Calibration"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Night_Sweep",
+	"trader_id": 3,
+	 "title": "Night Sweep"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Swift_One",
+	"trader_id": 7,
+	 "title": "Swift One"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Crisis",
+	"trader_id": 2,
+	 "title": "Crisis"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Escort",
+	"trader_id": 1,
+	 "title": "Escort"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Choice",
+	"trader_id": 7,
+	 "title": "The Choice"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Cleaner",
+	"trader_id": 4,
+	 "title": "Cleaner"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Long_Line",
+	"trader_id": 6,
+	 "title": "Long Line"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Relentless",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Relentless"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Booze",
+	"trader_id": 6,
+	 "title": "Booze"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Courier",
+	"trader_id": 5,
+	 "title": "The Courier"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Special_Equipment",
+	"trader_id": 4,
+	 "title": "Special Equipment"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Long_Road",
+	"trader_id": 3,
+	 "title": "Long Road"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Corporate_Secrets",
+	"trader_id": 5,
+	 "title": "Corporate Secrets"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Seaside_Vacation",
+	"trader_id": 2,
+	 "title": "Seaside Vacation"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Easy_Job_-_Part_1",
+	"trader_id": 1,
+	 "title": "Easy Job - Part 1"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Easy_Job_-_Part_2",
+	"trader_id": 1,
+	 "title": "Easy Job - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Cargo_X_-_Part_4",
+	"trader_id": 4,
+	 "title": "Cargo X - Part 4"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Hermit",
+	"trader_id": 7,
+	 "title": "The Hermit"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Communication_Difficulties",
+	"trader_id": 6,
+	 "title": "Communication Difficulties"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Missing_Cargo",
+	"trader_id": 3,
+	 "title": "Missing Cargo"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Outcasts",
+	"trader_id": 7,
+	 "title": "The Huntsman path - Outcasts"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Revision_-_Part_2",
+	"trader_id": 4,
+	 "title": "Revision - Part 2"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Our_Own_Land",
+	"trader_id": 1,
+	 "title": "Our Own Land"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Lost_Contact",
+	"trader_id": 2,
+	 "title": "Lost Contact"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Energy_Crisis",
+	"trader_id": 5,
+	 "title": "Energy Crisis"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Overpopulation",
+	"trader_id": 4,
+	 "title": "Overpopulation"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Counteraction",
+	"trader_id": 4,
+	 "title": "Counteraction"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Broadcast",
+	"trader_id": 5,
+	 "title": "Broadcast"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Top_Secret",
+	"trader_id": 3,
+	 "title": "Top Secret"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Stray_Dogs",
+	"trader_id": 7,
+	 "title": "Stray Dogs"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Drug_Trafficking",
+	"trader_id": 2,
+	 "title": "Drug Trafficking"
+)
+Quest.create(
+"wiki": "https://escapefromtarkov.fandom.com/wiki/Reconnaissance",
+	"trader_id": 1,
+	 "title": "Reconnaissance")
