@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :comments
+  resources :comments, only: [:show, :create, :update]
   resources :maps
   resources :quests
   resources :traders, only: [:index, :show]

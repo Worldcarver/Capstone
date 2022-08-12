@@ -5,10 +5,12 @@ import NavBar from "./Components/NavBar";
 import Login from "./Components/Login"
 import SignUp from "./Components/SignUp"
 import Home from "./Components/Home"
+import Traders from "./Components/Traders"
+
 function App() {
 
   const [user, setUser] = useState(null);
-
+  const [tradersData, setTradersData] = useState([]);
 
 
 
@@ -20,6 +22,11 @@ function App() {
     });
   }, []);
 
+  useEffect(() => {
+    fetch("/traders")
+    .then((res) => res.json())
+    .then((data) => setTradersData(data))
+  }, [])
 
 
 
@@ -38,8 +45,7 @@ function App() {
 
 
 
-
-
+ //make login page home with create account button
 
 
   return (
@@ -54,6 +60,14 @@ function App() {
           path="/" 
           element={<Home user={user} 
           />} />
+          <Route 
+          path="/traders"
+          element={<Traders tradersData = {tradersData}/>}
+          />
+          {/* <Route 
+          path='/:id/details'
+          element={<TraderPage />
+          }/> */}
          
         </Routes>
       ) : (
