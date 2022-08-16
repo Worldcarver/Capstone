@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :comments, only: [:show, :create, :update]
-  resources :maps
+  resources :maps, only: [:index, :show]
   resources :quests
   resources :traders, only: [:index, :show]
   resources :ammos

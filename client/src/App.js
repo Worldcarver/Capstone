@@ -1,17 +1,24 @@
 import './App.css';
-import {useState, useEffect} from "react"
-import {Routes, Route} from "react-router-dom"
+import {useState, useEffect} from "react";
+import {Routes, Route} from "react-router-dom";
 import NavBar from "./Components/NavBar";
-import Login from "./Components/Login"
-import SignUp from "./Components/SignUp"
-import Home from "./Components/Home"
-import Traders from "./Components/Traders"
+import Login from "./Components/Login";
+import SignUp from "./Components/SignUp";
+import Home from "./Components/Home";
+import Traders from "./Components/Traders";
+import TraderPage from './Components/TraderPage';
+import Maps from './Components/Maps';
+import MapDetail from './Components/MapDetail';
+
+
+
+
 
 function App() {
 
   const [user, setUser] = useState(null);
   const [tradersData, setTradersData] = useState([]);
-
+  const [mapData, setMapData] = useState([]);
 
 
   useEffect(() => {
@@ -28,6 +35,11 @@ function App() {
     .then((data) => setTradersData(data))
   }, [])
 
+  useEffect(() => {
+    fetch("/maps")
+    .then((res) => res.json())
+    .then((data) => setMapData(data))
+  }, [])
 
 
 
@@ -64,10 +76,17 @@ function App() {
           path="/traders"
           element={<Traders tradersData = {tradersData}/>}
           />
-          {/* <Route 
-          path='/:id/details'
+          <Route 
+          path='/traders/:id/details'
           element={<TraderPage />
-          }/> */}
+          }/>
+          <Route 
+          path="/maps"
+          element={<Maps mapData = {mapData}/>}
+          />
+          <Route 
+          path ="/maps/:id"
+          element ={<MapDetail />}/>
          
         </Routes>
       ) : (

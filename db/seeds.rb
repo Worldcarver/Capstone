@@ -2,7 +2,11 @@ require 'rest-client'
 require 'uri'
 require 'net/http'
 require 'openssl'
-
+Armor.destroy_all
+Map.destroy_all
+Trader.destroy_all
+Ammo.destroy_all
+Quest.destroy_all
 puts "seeding"
     #  Ammo.create(fetch
 
@@ -49,7 +53,7 @@ puts "seeding"
     # armor_fetch()
 Map.create(
   "name": "Customs",
-  "image": "https://tarkov.dev/maps/customs-monkix3.jpg"
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1009140680976773231/customs-monkix3.jpg"
 )
 Map.create(
   "name": "Factory",
@@ -105,6 +109,7 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.288",
     repaircost: "168",
+    trader_id: 6,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/6B2_Icon.png/revision/latest?cb=20191227220308"
 )
 Armor.create(
@@ -119,6 +124,7 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.36",
     repaircost: "125",
+    trader_id: 6,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/91/PACA_icon.png/revision/latest?cb=20181225213000"
 )
 Armor.create(
@@ -148,6 +154,7 @@ Armor.create(
     ergonomicspenalty: "-6",
     bluntthroughput: "0.288",
     repaircost: "437",
+    trader_id: 6,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/BNTIKirasaNarmorIcon.png/revision/latest?cb=20200710212404"
 )
 
@@ -178,6 +185,7 @@ Armor.create(
     ergonomicspenalty: "-9",
     bluntthroughput: "0.216",
     repaircost: "150",
+    trader_id: 6,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/6B23-1icon.png/revision/latest?cb=20190101212542"
 )
 Armor.create(
@@ -192,6 +200,7 @@ Armor.create(
     ergonomicspenalty: "-8",
     bluntthroughput: "0.24",
     repaircost: "325",
+    trader_id: 4,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/UNTARArmorIcon.png/revision/latest?cb=20220404223035"
 )
 Armor.create(
@@ -264,6 +273,7 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.204",
     repaircost: "375",
+    trader_id: 6,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/6B13_assault_armor_icon.gif/revision/latest?cb=20190101213918"
 )
 Armor.create(
@@ -278,6 +288,7 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.36",
     repaircost: "375",
+    trader_id: 6,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a6/THOR_Concealable_Icon.png/revision/latest?cb=20220404222633"
 )
 Armor.create(
@@ -432,6 +443,7 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.18",
     repaircost: "900",
+    trader_id: 4,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b0/OspreyMk4_Assault_Icon.png/revision/latest?cb=20211206002249"
 )
 Armor.create(
@@ -446,6 +458,7 @@ Armor.create(
     ergonomicspenalty: "-11",
     bluntthroughput: "0.24",
     repaircost: "937",
+    trader_id: 6,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/FORT_Redut-M_body_armor_icon.png/revision/latest?cb=20200318200437"
 )
 Armor.create(
@@ -462,20 +475,7 @@ Armor.create(
     repaircost: "1600",
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/26/Gen4hmk.png/revision/latest?cb=20200318200459"
 )
-Armor.create(
-    name: "Ops-Core SLAAP armor helmet plate (Tan)",
-    armorclass: "5",
-    materials: "UHMWPE",
-    protectionzones: "Head",
-    maxdurability: "30",
-    effectivedurability: "66.66666666666667",
-    movementspeedpentality: "-8",
-    turnspeedpenality: "0",
-    ergonomicspenalty: "-15",
-    bluntthroughput: "0.08",
-    repaircost: "175",
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/93/SLAAPArmorPlateIcon.png/revision/latest?cb=20190101213638"
-)
+
 Armor.create(
     name: "IOTV Gen4 body armor (assault kit)",
     armorclass: "5",
@@ -516,6 +516,7 @@ Armor.create(
     ergonomicspenalty: "-4",
     bluntthroughput: "0.144",
     repaircost: "562",
+    trader_id: 6,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/GZHELKArmorIcon.png/revision/latest?cb=20200209203059"
 )
 Armor.create(
@@ -544,6 +545,7 @@ Armor.create(
     ergonomicspenalty: "-11",
     bluntthroughput: "0.165",
     repaircost: "850",
+    trader_id: 4,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/OspreyMk4_Protection_Icon.png/revision/latest?cb=20211206002404"
 )
 Armor.create(
@@ -600,6 +602,7 @@ Armor.create(
     ergonomicspenalty: "-10",
     bluntthroughput: "0.288",
     repaircost: "1187",
+    trader_id: 1,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/KORUNDIcon.png/revision/latest?cb=20201019171750"
 )
 Armor.create(

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 
 
-const SignUp = () => {
+const SignUp = ({ setUser }) => {
     const [formData, setFormData] = useState({
         username:'',
         password:''
@@ -25,17 +25,13 @@ const SignUp = () => {
           headers:{'Content-Type': 'application/json'},
           body:JSON.stringify(user)
         })
-        .then(res => {
-            if(res.ok){
-                res.json().then(user => {
-                    navigate(`/login`)
-                })
-             }
+        .then(res => res.json())
+        .then(user => setUser(user))
             //  else {
             //     res.json().then(json => setErrors(Object.entries(json.errors)))
             // }
-        })
-       
+        
+            
     }
     
 
