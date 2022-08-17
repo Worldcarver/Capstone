@@ -49,8 +49,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_12_183044) do
     t.string "bluntthroughput"
     t.string "repaircost"
     t.string "image"
+    t.bigint "trader_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["trader_id"], name: "index_armors_on_trader_id"
   end
 
   create_table "comments", force: :cascade do |t|
@@ -100,4 +102,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_12_183044) do
   add_foreign_key "comments", "maps"
   add_foreign_key "comments", "users"
   add_foreign_key "quests", "traders"
+  add_foreign_key "armors", "traders"
 end

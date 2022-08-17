@@ -77,7 +77,7 @@ function App() {
           element={<Traders tradersData = {tradersData}/>}
           />
           <Route 
-          path='/traders/:id/details'
+          path='/:id/details'
           element={<TraderPage />
           }/>
           <Route 

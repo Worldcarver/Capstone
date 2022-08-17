@@ -51,6 +51,260 @@ puts "seeding"
     # end
 
     # armor_fetch()
+    Trader.create(
+  "name": "Pavel Yegorovich Romanenko",
+  "alias": "Prapor",
+  "description": "Warrant officer in charge of supply warehouses on the sustaining base for the Internal Troops enforcing the Norvinsk region blockade. During the Contract Wars he secretly supplied the BEAR PMC operators with weapons, ammunition, and various other provisions he had at his disposal.",
+  "salesCurrency": "RUB",
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749174093156402/PraporFullRes.webp",
+  "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 15,
+                "requiredReputation": 0.2,
+                "requiredSales": 750000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 26,
+                "requiredReputation": 0.35,
+                "requiredSales": 1500000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 36,
+                "requiredReputation": 0.5,
+                "requiredSales": 2300000
+            }
+          ]
+  
+)
+Trader.create(
+  "name": "Elvira Khabibullina",
+  "alias": "Therapist",
+  "description": "Head of the Trauma Care Department of the Tarkov Central City Hospital.",
+  "salesCurrency": "RUB",
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749444718043166/TherapistFullRes.webp",
+  "loyalty": [
+    {
+        "level": 1,
+        "requiredLevel": 1,
+        "requiredReputation": 0,
+        "requiredSales": 0
+    },
+    {
+        "level": 2,
+        "requiredLevel": 13,
+        "requiredReputation": 0.15,
+        "requiredSales": 400000
+    },
+    {
+        "level": 3,
+        "requiredLevel": 24,
+        "requiredReputation": 0.3,
+        "requiredSales": 700000
+    },
+    {
+        "level": 4,
+        "requiredLevel": 35,
+        "requiredReputation": 0.6,
+        "requiredSales": 900000
+    }
+    ]
+  
+)
+Trader.create(
+  "name": "Alexander Fyodorovich Kiselyov",
+  "alias": "Skier",
+  "description": "Port zone customs terminal employee. Initially dealing in the terminal's goods, over the course of conflict put together a gang to grab everything he could put his hands on in the vicinity of the terminal.",
+  "salesCurrency": "RUB",
+  "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 15,
+                "requiredReputation": 0.2,
+                "requiredSales": 800000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 28,
+                "requiredReputation": 0.4,
+                "requiredSales": 1600000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 38,
+                "requiredReputation": 0.75,
+                "requiredSales": 2600000
+            }
+        ],
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749605854826556/SkierFullRes.webp"
+)
+Trader.create(
+  "name": "Tadeusz Pilsudski",
+  "alias": "Peacekeeper",
+  "description": "UN peacekeeping force supplies officer, based in one of the central checkpoints leading to the Tarkov port zone. The blue helmets have been venturing into small deals from the very beginning, buying everything of value in exchange for western weapons, ammo and some kinds of military equipment.",
+  "salesCurrency": "USD",
+        "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 14,
+                "requiredReputation": 0,
+                "requiredSales": 11000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 23,
+                "requiredReputation": 0.3,
+                "requiredSales": 25000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 37,
+                "requiredReputation": 0.6,
+                "requiredSales": 32000
+            }
+        ],
+        "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749730098487426/PeacekeeperFullRes.webp"
+)
+Trader.create(
+  "name": "Sergey Arsenyevich Samoylov",
+  "alias": "Mechanic",
+  "description": "Chemical plant foreman before conflict, from its very beginning he took to weapon modification works and repairs and maintenance of complex equipment and tech. He prefers clandestine solo living and operates discreetly, placing complicated and challenging tasks above everything.",
+  "salesCurrency": "RUB",
+  "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 20,
+                "requiredReputation": 0.15,
+                "requiredSales": 750000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 30,
+                "requiredReputation": 0.3,
+                "requiredSales": 1600000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 40,
+                "requiredReputation": 0.6,
+                "requiredSales": 2500000
+            }
+        ],
+        "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750070445281382/Sergey_Arsenyevich_Samoylov.webp"
+)
+Trader.create(
+  "name": "Abramyan Arshavir Sarkisivich",
+  "alias": "Ragman",
+  "description": "Abramyan Arshavir Sarkisivich aka Ragman. He worked as a director in a big market located in Tarkov's suburb. Sells everything related to clothing and gear.",
+  "salesCurrency": "RUB",
+  "loyalty": [
+      {
+          "level": 1,
+          "requiredLevel": 1,
+          "requiredReputation": 0,
+          "requiredSales": 0
+      },
+      {
+          "level": 2,
+          "requiredLevel": 17,
+          "requiredReputation": 0,
+          "requiredSales": 750000
+      },
+      {
+          "level": 3,
+          "requiredLevel": 32,
+          "requiredReputation": 0.3,
+          "requiredSales": 1600000
+      },
+      {
+          "level": 4,
+          "requiredLevel": 42,
+          "requiredReputation": 0.6,
+          "requiredSales": 2500000
+      }
+  ],
+  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750186799468594/Ragpickerbanner.webp"
+)
+Trader.create(
+  "name": "Ivan Egorovich Kharitonov",
+  "alias": "Jaeger",
+  "description": "Kharitonov Ivan Egorovich aka Jaeger. He worked in the forest hunting property of the Priozersky reserve under the State Jaegers Service. Professional hunter and survival specialist. He guarded and guards, no matter what, his jaeger's ground from various aggressive individuals.",
+  "salesCurrency": "RUB",
+        "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 15,
+                "requiredReputation": 0.2,
+                "requiredSales": 750000
+            },
+            {
+                "level": 3,
+                "requiredLevel": 22,
+                "requiredReputation": 0.35,
+                "requiredSales": 1500000
+            },
+            {
+                "level": 4,
+                "requiredLevel": 33,
+                "requiredReputation": 0.5,
+                "requiredSales": 2300000
+            }
+        ],
+      "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750352206041168/Jaeger.webp"
+)
+Trader.create(
+  "name": "<unknown>",
+  "alias": "Fence",
+  "description": "The conflict had barely started when Fence had already started setting up anonymous outlets for buying and selling goods. Keeping incognito, he nevertheless managed to put together a well-organised smuggler network operating all over Norvinsk region.",
+  "salesCurrency": "RUB",
+  "loyalty": [
+            {
+                "level": 1,
+                "requiredLevel": 1,
+                "requiredReputation": 0,
+                "requiredSales": 0
+            },
+            {
+                "level": 2,
+                "requiredLevel": 1,
+                "requiredReputation": 6,
+                "requiredSales": 0
+            }
+          ],
+          "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750462574952548/FenceFullRes.webp"
+)
 Map.create(
   "name": "Customs",
   "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1009140680976773231/customs-monkix3.jpg"
@@ -95,6 +349,7 @@ Armor.create(
     ergonomicspenalty: "-1",
     bluntthroughput: "0.42",
     repaircost: "112",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/3M_icon.png/revision/latest?cb=20220404223504"
 )
 Armor.create(
@@ -139,6 +394,7 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.3",
     repaircost: "100",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/PACA_Rivals_Edition_icon.png/revision/latest?cb=20220325152556"
 )
 
@@ -170,6 +426,7 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.24",
     repaircost: "362",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/Zhuk-3_Press_armor_icon.png/revision/latest?cb=20181230160722"
 )
 
@@ -215,6 +472,7 @@ Armor.create(
     ergonomicspenalty: "-12",
     bluntthroughput: "0.24",
     repaircost: "680",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c7/6B5-16_armored_rig_icon.png/revision/latest?cb=20200422225151"
 )
 
@@ -230,6 +488,7 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.36",
     repaircost: "140",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/DRD_body_armor.png/revision/latest?cb=20220703010422"
 )
 
@@ -245,6 +504,7 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.225",
     repaircost: "800",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/AVS_icon.png/revision/latest?cb=20191226173848"
 )
 Armor.create(
@@ -259,6 +519,7 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.204",
     repaircost: "375",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/6B13_assault_armor_icon.gif/revision/latest?cb=20190101213918"
 )
 Armor.create(
@@ -303,6 +564,7 @@ Armor.create(
     ergonomicspenalty: "-3",
     bluntthroughput: "0.216",
     repaircost: "1025",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bb/Highcom_Trooper_TFO_armor_%28multicam%29_icon.png/revision/latest?cb=20200314230803"
 )
 Armor.create(
@@ -317,6 +579,7 @@ Armor.create(
     ergonomicspenalty: "-12",
     bluntthroughput: "0.255",
     repaircost: "550",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8e/6B5-15icon.png/revision/latest?cb=20200422225144"
 )
 Armor.create(
@@ -331,6 +594,7 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.22",
     repaircost: "660",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4d/Mmac_Icon.png/revision/latest?cb=20211229222915"
 )
 Armor.create(
@@ -345,6 +609,7 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.225",
     repaircost: "850",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/M2Inventory.PNG/revision/latest?cb=20201102231418"
 )
 Armor.create(
@@ -359,6 +624,7 @@ Armor.create(
     ergonomicspenalty: "-4",
     bluntthroughput: "0.188",
     repaircost: "550",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1a/RBAV-AF_Thumb.png/revision/latest?cb=20220705225148"
 )
 Armor.create(
@@ -373,6 +639,7 @@ Armor.create(
     ergonomicspenalty: "-15",
     bluntthroughput: "0.36",
     repaircost: "650",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/79/6B3TM-01M_Icon.png/revision/latest?cb=20200326122406"
 )
 Armor.create(
@@ -387,6 +654,7 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.24",
     repaircost: "780",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ee/Wartech_TV-110_plate_carrier_icon.png/revision/latest?cb=20191227004802"
 )
 Armor.create(
@@ -401,6 +669,7 @@ Armor.create(
     ergonomicspenalty: "-9",
     bluntthroughput: "0.195",
     repaircost: "880",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/A18_Icon.png/revision/latest?cb=20191214005138"
 )
 Armor.create(
@@ -415,6 +684,7 @@ Armor.create(
     ergonomicspenalty: "-3",
     bluntthroughput: "0.242",
     repaircost: "720",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b4/Strandhogg_Icon.png/revision/latest?cb=20211229223247"
 )
 Armor.create(
@@ -429,6 +699,7 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.225",
     repaircost: "750",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3c/ANA_Tactical_M1_icon.png/revision/latest?cb=20200422225159"
 )
 Armor.create(
@@ -473,6 +744,7 @@ Armor.create(
     ergonomicspenalty: "-12",
     bluntthroughput: "0.264",
     repaircost: "1600",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/26/Gen4hmk.png/revision/latest?cb=20200318200459"
 )
 
@@ -488,6 +760,7 @@ Armor.create(
     ergonomicspenalty: "-14",
     bluntthroughput: "0.264",
     repaircost: "1600",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Gen4assault.png/revision/latest?cb=20200318200452"
 )
 Armor.create(
@@ -502,6 +775,7 @@ Armor.create(
     ergonomicspenalty: "-3",
     bluntthroughput: "0.195",
     repaircost: "850",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/TactecIcon.png/revision/latest?cb=20200422225205"
 )
 Armor.create(
@@ -531,6 +805,7 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.165",
     repaircost: "1000",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7c/AACPC_icon.png/revision/latest?cb=20200501235928"
 )
 Armor.create(
@@ -560,6 +835,7 @@ Armor.create(
     ergonomicspenalty: "-8",
     bluntthroughput: "0.29",
     repaircost: "890",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/21/S%26S_Precision_PlateFrame_GE_icon.png/revision/latest?cb=20220705231759"
 )
 Armor.create(
@@ -574,6 +850,7 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.145",
     repaircost: "900",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/CPCGoons.png/revision/latest?cb=20220705230535"
 )
 Armor.create(
@@ -588,6 +865,7 @@ Armor.create(
     ergonomicspenalty: "-14",
     bluntthroughput: "0.24",
     repaircost: "1375",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/23/FORT_Redut-T5_body_armor_icon.png/revision/latest?cb=20200318200444"
 )
 Armor.create(
@@ -617,6 +895,7 @@ Armor.create(
     ergonomicspenalty: "-9",
     bluntthroughput: "0.17",
     repaircost: "700",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f2/NPP_Bagariy_icon.png/revision/latest?cb=20220705234556"
 )
 Armor.create(
@@ -631,6 +910,7 @@ Armor.create(
     ergonomicspenalty: "-22",
     bluntthroughput: "0.264",
     repaircost: "1600",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/IOTVfullIcon.png/revision/latest?cb=20200318200506"
 )
 Armor.create(
@@ -645,6 +925,7 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.24",
     repaircost: "1162",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/Defender-2_Icon.png/revision/latest?cb=20200606094109"
 )
 Armor.create(
@@ -659,6 +940,7 @@ Armor.create(
     ergonomicspenalty: "-27",
     bluntthroughput: "0.3",
     repaircost: "1562",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/FORT_armor_icon.png/revision/latest?cb=20220404223226"
 )
 Armor.create(
@@ -673,6 +955,7 @@ Armor.create(
     ergonomicspenalty: "-6",
     bluntthroughput: "0.252",
     repaircost: "1337",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5c/Zhuk-6a_heavy_armor_icon.png/revision/latest?cb=20190110121834"
 )
 Armor.create(
@@ -687,6 +970,7 @@ Armor.create(
     ergonomicspenalty: "-20",
     bluntthroughput: "0.276",
     repaircost: "1437",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/00/THOR_IC_Icon.png/revision/latest?cb=20211206001408"
 )
 Armor.create(
@@ -701,6 +985,7 @@ Armor.create(
     ergonomicspenalty: "-1",
     bluntthroughput: "0.24",
     repaircost: "1187",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/5.11_Hexgrid_plate_carrier.png/revision/latest?cb=20210129120630"
 )
 Armor.create(
@@ -715,6 +1000,7 @@ Armor.create(
     ergonomicspenalty: "-1",
     bluntthroughput: "0.228",
     repaircost: "1250",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c6/Slick.gif/revision/latest?cb=20220328141454"
 )
 Armor.create(
@@ -729,6 +1015,7 @@ Armor.create(
     ergonomicspenalty: "-8",
     bluntthroughput: "0.27",
     repaircost: "890",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fa/MBAV_icon.png/revision/latest?cb=20210701042443"
 )
 Armor.create(
@@ -743,6 +1030,7 @@ Armor.create(
     ergonomicspenalty: "-6",
     bluntthroughput: "0.28",
     repaircost: "620",
+    trader_id: nil,
     image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/TT_SK.PNG/revision/latest?cb=20220705233101"
 )
 puts "seeding armor done" 
@@ -3691,260 +3979,7 @@ puts "seeding armor done"
       "recoil": -29,
       "initialSpeed": 455
 )
-Trader.create(
-  "name": "Pavel Yegorovich Romanenko",
-  "alias": "Prapor",
-  "description": "Warrant officer in charge of supply warehouses on the sustaining base for the Internal Troops enforcing the Norvinsk region blockade. During the Contract Wars he secretly supplied the BEAR PMC operators with weapons, ammunition, and various other provisions he had at his disposal.",
-  "salesCurrency": "RUB",
-  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749174093156402/PraporFullRes.webp",
-  "loyalty": [
-            {
-                "level": 1,
-                "requiredLevel": 1,
-                "requiredReputation": 0,
-                "requiredSales": 0
-            },
-            {
-                "level": 2,
-                "requiredLevel": 15,
-                "requiredReputation": 0.2,
-                "requiredSales": 750000
-            },
-            {
-                "level": 3,
-                "requiredLevel": 26,
-                "requiredReputation": 0.35,
-                "requiredSales": 1500000
-            },
-            {
-                "level": 4,
-                "requiredLevel": 36,
-                "requiredReputation": 0.5,
-                "requiredSales": 2300000
-            }
-          ]
-  
-)
-Trader.create(
-  "name": "Elvira Khabibullina",
-  "alias": "Therapist",
-  "description": "Head of the Trauma Care Department of the Tarkov Central City Hospital.",
-  "salesCurrency": "RUB",
-  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749444718043166/TherapistFullRes.webp",
-  "loyalty": [
-    {
-        "level": 1,
-        "requiredLevel": 1,
-        "requiredReputation": 0,
-        "requiredSales": 0
-    },
-    {
-        "level": 2,
-        "requiredLevel": 13,
-        "requiredReputation": 0.15,
-        "requiredSales": 400000
-    },
-    {
-        "level": 3,
-        "requiredLevel": 24,
-        "requiredReputation": 0.3,
-        "requiredSales": 700000
-    },
-    {
-        "level": 4,
-        "requiredLevel": 35,
-        "requiredReputation": 0.6,
-        "requiredSales": 900000
-    }
-    ]
-  
-)
-Trader.create(
-  "name": "Alexander Fyodorovich Kiselyov",
-  "alias": "Skier",
-  "description": "Port zone customs terminal employee. Initially dealing in the terminal's goods, over the course of conflict put together a gang to grab everything he could put his hands on in the vicinity of the terminal.",
-  "salesCurrency": "RUB",
-  "loyalty": [
-            {
-                "level": 1,
-                "requiredLevel": 1,
-                "requiredReputation": 0,
-                "requiredSales": 0
-            },
-            {
-                "level": 2,
-                "requiredLevel": 15,
-                "requiredReputation": 0.2,
-                "requiredSales": 800000
-            },
-            {
-                "level": 3,
-                "requiredLevel": 28,
-                "requiredReputation": 0.4,
-                "requiredSales": 1600000
-            },
-            {
-                "level": 4,
-                "requiredLevel": 38,
-                "requiredReputation": 0.75,
-                "requiredSales": 2600000
-            }
-        ],
-  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749605854826556/SkierFullRes.webp"
-)
-Trader.create(
-  "name": "Tadeusz Pilsudski",
-  "alias": "Peacekeeper",
-  "description": "UN peacekeeping force supplies officer, based in one of the central checkpoints leading to the Tarkov port zone. The blue helmets have been venturing into small deals from the very beginning, buying everything of value in exchange for western weapons, ammo and some kinds of military equipment.",
-  "salesCurrency": "USD",
-        "loyalty": [
-            {
-                "level": 1,
-                "requiredLevel": 1,
-                "requiredReputation": 0,
-                "requiredSales": 0
-            },
-            {
-                "level": 2,
-                "requiredLevel": 14,
-                "requiredReputation": 0,
-                "requiredSales": 11000
-            },
-            {
-                "level": 3,
-                "requiredLevel": 23,
-                "requiredReputation": 0.3,
-                "requiredSales": 25000
-            },
-            {
-                "level": 4,
-                "requiredLevel": 37,
-                "requiredReputation": 0.6,
-                "requiredSales": 32000
-            }
-        ],
-        "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007749730098487426/PeacekeeperFullRes.webp"
-)
-Trader.create(
-  "name": "Sergey Arsenyevich Samoylov",
-  "alias": "Mechanic",
-  "description": "Chemical plant foreman before conflict, from its very beginning he took to weapon modification works and repairs and maintenance of complex equipment and tech. He prefers clandestine solo living and operates discreetly, placing complicated and challenging tasks above everything.",
-  "salesCurrency": "RUB",
-  "loyalty": [
-            {
-                "level": 1,
-                "requiredLevel": 1,
-                "requiredReputation": 0,
-                "requiredSales": 0
-            },
-            {
-                "level": 2,
-                "requiredLevel": 20,
-                "requiredReputation": 0.15,
-                "requiredSales": 750000
-            },
-            {
-                "level": 3,
-                "requiredLevel": 30,
-                "requiredReputation": 0.3,
-                "requiredSales": 1600000
-            },
-            {
-                "level": 4,
-                "requiredLevel": 40,
-                "requiredReputation": 0.6,
-                "requiredSales": 2500000
-            }
-        ],
-        "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750070445281382/Sergey_Arsenyevich_Samoylov.webp"
-)
-Trader.create(
-  "name": "Abramyan Arshavir Sarkisivich",
-  "alias": "Ragman",
-  "description": "Abramyan Arshavir Sarkisivich aka Ragman. He worked as a director in a big market located in Tarkov's suburb. Sells everything related to clothing and gear.",
-  "salesCurrency": "RUB",
-  "loyalty": [
-      {
-          "level": 1,
-          "requiredLevel": 1,
-          "requiredReputation": 0,
-          "requiredSales": 0
-      },
-      {
-          "level": 2,
-          "requiredLevel": 17,
-          "requiredReputation": 0,
-          "requiredSales": 750000
-      },
-      {
-          "level": 3,
-          "requiredLevel": 32,
-          "requiredReputation": 0.3,
-          "requiredSales": 1600000
-      },
-      {
-          "level": 4,
-          "requiredLevel": 42,
-          "requiredReputation": 0.6,
-          "requiredSales": 2500000
-      }
-  ],
-  "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750186799468594/Ragpickerbanner.webp"
-)
-Trader.create(
-  "name": "Ivan Egorovich Kharitonov",
-  "alias": "Jaeger",
-  "description": "Kharitonov Ivan Egorovich aka Jaeger. He worked in the forest hunting property of the Priozersky reserve under the State Jaegers Service. Professional hunter and survival specialist. He guarded and guards, no matter what, his jaeger's ground from various aggressive individuals.",
-  "salesCurrency": "RUB",
-        "loyalty": [
-            {
-                "level": 1,
-                "requiredLevel": 1,
-                "requiredReputation": 0,
-                "requiredSales": 0
-            },
-            {
-                "level": 2,
-                "requiredLevel": 15,
-                "requiredReputation": 0.2,
-                "requiredSales": 750000
-            },
-            {
-                "level": 3,
-                "requiredLevel": 22,
-                "requiredReputation": 0.35,
-                "requiredSales": 1500000
-            },
-            {
-                "level": 4,
-                "requiredLevel": 33,
-                "requiredReputation": 0.5,
-                "requiredSales": 2300000
-            }
-        ],
-      "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750352206041168/Jaeger.webp"
-)
-Trader.create(
-  "name": "<unknown>",
-  "alias": "Fence",
-  "description": "The conflict had barely started when Fence had already started setting up anonymous outlets for buying and selling goods. Keeping incognito, he nevertheless managed to put together a well-organised smuggler network operating all over Norvinsk region.",
-  "salesCurrency": "RUB",
-  "loyalty": [
-            {
-                "level": 1,
-                "requiredLevel": 1,
-                "requiredReputation": 0,
-                "requiredSales": 0
-            },
-            {
-                "level": 2,
-                "requiredLevel": 1,
-                "requiredReputation": 6,
-                "requiredSales": 0
-            }
-          ],
-          "image": "https://cdn.discordapp.com/attachments/1007749002248327178/1007750462574952548/FenceFullRes.webp"
-)
+
 
 Quest.create(
 	"wiki": "https://escapefromtarkov.fandom.com/wiki/Debut",

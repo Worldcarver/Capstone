@@ -12,6 +12,21 @@ const MapDetail = () => {
         .then((data) => setDetailMapData(data))
     }, []);
     const {name, image} = detailMapData;
+
+
+
+    return(
+        <div className="bgmapimg">
+            
+            <h1 className="tdrtitle">
+                {name}
+            </h1>
+            <img className="traderpageimg" src={image} alt={name}/>
+            
+            
+        </div>
+    )
 }
+
 
 export default MapDetail

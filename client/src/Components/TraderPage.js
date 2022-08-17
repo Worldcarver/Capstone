@@ -1,31 +1,43 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import QuestCard from './QuestCard'
 
 
-
-
+    
 
 
 const TraderPage = () =>{
     const [traderData, setTraderData] = useState([])
+    // const [tradersQuestWiki, setTradersQuestWiki] = useState([])
     const { id } = useParams();
     useEffect(() => {
-        fetch(`/traders/${id}`)
+    async function trader(){
+         
+        await fetch(`/traders/${id}`)
         .then((res) => res.json())
         .then((data) => setTraderData(data))
-    }, []);
-
-const {name, alias, description, salesCurrency, image, quests} = traderData
-const traderQuestTitle = quests.map((quest) => 
-    quest.title
-)
-// const traderQuestWiki = quests.map((quest) =>
-//     quest.wiki
-// )
-// const traderQuestId = quests.map((quest) =>
-//     quest.id    
-// )
-
+        } 
+        trader()
+        }, []);
+    
+    const {name, alias, description, salesCurrency, image, quests} = traderData
+        
+    // const questWiki = async () => {
+    // const traderQuestWiki = quests.map((quest) =>
+    //     quest.wiki)
+    //     setTradersQuestWiki(traderQuestWiki)    
+    // }
+    // questWiki([])
+    //     const traderQuestId = quests.map((quest) =>
+    //     quest.id    
+    //     )
+    //     const traderQuestTitle = quests.map((quest) =>
+    //     quest.title
+    //     )
+   // const trader = async () => {
+    // setTradersQuests(traderQuestTitle)
+    // }
+    // console.log(quests)
 return(
     <div className="bgtdrimg">
         
@@ -35,16 +47,9 @@ return(
         <img className="traderpageimg" src={image} alt={alias}/>
             <p> {description} </p>
             <p>Deals in: {salesCurrency}</p>
-        <table className="questtable">
-            <thead > 
-                <tr>
-                    {/* <th>{traderQuestId}</th> */}
-                    <td> {traderQuestTitle} </td>
-                    {/* <td>{traderQuestWiki}</td> */}
-                </tr>
-
-            </thead>
-        </table>
+            {/* {quests.map((quest) => {
+                <QuestCard key = {quest.id} quest = {quest}/>
+            }) } */}
     </div>
 )
 
