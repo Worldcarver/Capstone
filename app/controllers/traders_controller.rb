@@ -11,6 +11,10 @@ class TradersController < ApplicationController
         render json: @trader
     end
 
+    def showArmors
+        trader = Trader.first
+        render json: trader.armors
+    end
     private
     def find_trader
         @trader = Trader.find(params[:id])

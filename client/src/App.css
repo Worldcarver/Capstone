@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.questtable {
+  font-family: 'Friz Quadrata Std', sans-serif;
+  width: 25%;
+  border: 3px solid;
+  border-color: #EDB852;
+  color:#c2b191;
+  text-shadow: 2px 2px #000000;
+  font-size: 20px;
+  margin-left: 558px;
+  margin-top: -140px;
+  background: #1d1c1c;
+  justify-content: space-evenly;
+}
