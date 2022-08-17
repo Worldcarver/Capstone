@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-
+import CommentCard from "./CommentCard";
 
 
 const MapDetail = () => {
@@ -18,11 +18,11 @@ const MapDetail = () => {
     return(
         <div className="bgmapimg">
             
-            <h1 className="tdrtitle">
+            <h1 className="mapname">
                 {name}
             </h1>
-            <img className="traderpageimg" src={image} alt={name}/>
-            
+            <img className="mappageimg" src={image} alt={name}/>
+            {<CommentCard />}
             
         </div>
     )

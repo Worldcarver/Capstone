@@ -349,8 +349,8 @@ Armor.create(
     ergonomicspenalty: "-1",
     bluntthroughput: "0.42",
     repaircost: "112",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/3M_icon.png/revision/latest?cb=20220404223504"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009541140573339779/3M_icon.webp"
 )
 Armor.create(
     name: "6B2 body armor (Flora)",
@@ -365,7 +365,7 @@ Armor.create(
     bluntthroughput: "0.288",
     repaircost: "168",
     trader_id: 6,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/ca/6B2_Icon.png/revision/latest?cb=20191227220308"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009541271792124015/6B2_Icon.webp"
 )
 Armor.create(
     name: "PACA Soft Armor",
@@ -380,7 +380,7 @@ Armor.create(
     bluntthroughput: "0.36",
     repaircost: "125",
     trader_id: 6,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/91/PACA_icon.png/revision/latest?cb=20181225213000"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009541357402083438/PACA_icon.webp"
 )
 Armor.create(
     name: "PACA Soft Armor (Rivals Edition)",
@@ -394,8 +394,8 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.3",
     repaircost: "100",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/PACA_Rivals_Edition_icon.png/revision/latest?cb=20220325152556"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542247164948581/PACA_Rivals_Edition_icon.webp"
 )
 
 Armor.create(
@@ -411,7 +411,7 @@ Armor.create(
     bluntthroughput: "0.288",
     repaircost: "437",
     trader_id: 6,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/BNTIKirasaNarmorIcon.png/revision/latest?cb=20200710212404"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542324436602912/BNTIKirasaNarmorIcon.webp"
 )
 
 Armor.create(
@@ -426,8 +426,8 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.24",
     repaircost: "362",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/Zhuk-3_Press_armor_icon.png/revision/latest?cb=20181230160722"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542401586630706/Zhuk-3_Press_armor_icon.webp"
 )
 
 Armor.create(
@@ -443,7 +443,7 @@ Armor.create(
     bluntthroughput: "0.216",
     repaircost: "150",
     trader_id: 6,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/61/6B23-1icon.png/revision/latest?cb=20190101212542"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542480489877524/6B23-1icon.webp"
 )
 Armor.create(
     name: "MF-UNTAR body armor",
@@ -458,7 +458,7 @@ Armor.create(
     bluntthroughput: "0.24",
     repaircost: "325",
     trader_id: 4,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/UNTARArmorIcon.png/revision/latest?cb=20220404223035"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542546164301944/UNTARArmorIcon.webp"
 )
 Armor.create(
     name: "6B5-16 Zh-86 Uley armored rig",
@@ -472,8 +472,8 @@ Armor.create(
     ergonomicspenalty: "-12",
     bluntthroughput: "0.24",
     repaircost: "680",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c7/6B5-16_armored_rig_icon.png/revision/latest?cb=20200422225151"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542660089970768/6B5-16_armored_rig_icon.webp"
 )
 
 Armor.create(
@@ -488,8 +488,8 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.36",
     repaircost: "140",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/22/DRD_body_armor.png/revision/latest?cb=20220703010422"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542784459489390/DRD_body_armor.webp"
 )
 
 Armor.create(
@@ -504,8 +504,8 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.225",
     repaircost: "800",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ae/AVS_icon.png/revision/latest?cb=20191226173848"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542861412389066/AVS_icon.webp"
 )
 Armor.create(
     name: "6B13 assault armor (Digital Flora)",
@@ -519,8 +519,8 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.204",
     repaircost: "375",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/6B13_assault_armor_icon.gif/revision/latest?cb=20190101213918"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542959039000636/6B13_assault_armor_icon.webp"
 )
 Armor.create(
     name: "6B13 assault armor (Flora)",
@@ -535,7 +535,7 @@ Armor.create(
     bluntthroughput: "0.204",
     repaircost: "375",
     trader_id: 6,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/6B13_assault_armor_icon.gif/revision/latest?cb=20190101213918"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009542959039000636/6B13_assault_armor_icon.webp"
 )
 Armor.create(
     name: "NFM THOR Concealable Reinforced Vest body armor",
@@ -550,7 +550,7 @@ Armor.create(
     bluntthroughput: "0.36",
     repaircost: "375",
     trader_id: 6,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a6/THOR_Concealable_Icon.png/revision/latest?cb=20220404222633"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543116761604096/THOR_Concealable_Icon.webp"
 )
 Armor.create(
     name: "HighCom Trooper TFO body armor (Multicam)",
@@ -564,8 +564,8 @@ Armor.create(
     ergonomicspenalty: "-3",
     bluntthroughput: "0.216",
     repaircost: "1025",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/bb/Highcom_Trooper_TFO_armor_%28multicam%29_icon.png/revision/latest?cb=20200314230803"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543183178416228/Highcom_Trooper_TFO_armor_28multicam29_icon.webp"
 )
 Armor.create(
     name: "6B5-15 Zh-86 Uley armored rig",
@@ -579,8 +579,8 @@ Armor.create(
     ergonomicspenalty: "-12",
     bluntthroughput: "0.255",
     repaircost: "550",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8e/6B5-15icon.png/revision/latest?cb=20200422225144"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543326321619025/6B5-15icon.webp"
 )
 Armor.create(
     name: "Eagle Industries MMAC plate carrier (Ranger Green)",
@@ -594,8 +594,8 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.22",
     repaircost: "660",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4d/Mmac_Icon.png/revision/latest?cb=20211229222915"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543406319566919/Mmac_Icon.webp"
 )
 Armor.create(
     name: "ANA Tactical M2 armored rig",
@@ -609,8 +609,8 @@ Armor.create(
     ergonomicspenalty: "-2",
     bluntthroughput: "0.225",
     repaircost: "850",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/M2Inventory.PNG/revision/latest?cb=20201102231418"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543484451078304/M2Inventory.PNG.webp"
 )
 Armor.create(
     name: "ECLiPSE RBAV-AF plate carrier (Ranger Green)",
@@ -624,8 +624,8 @@ Armor.create(
     ergonomicspenalty: "-4",
     bluntthroughput: "0.188",
     repaircost: "550",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/1a/RBAV-AF_Thumb.png/revision/latest?cb=20220705225148"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543570014875748/RBAV-AF_Thumb.webp"
 )
 Armor.create(
     name: "6B3TM-01M armored rig",
@@ -639,8 +639,8 @@ Armor.create(
     ergonomicspenalty: "-15",
     bluntthroughput: "0.36",
     repaircost: "650",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/79/6B3TM-01M_Icon.png/revision/latest?cb=20200326122406"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543645403287644/6B3TM-01M_Icon.webp"
 )
 Armor.create(
     name: "WARTECH TV-110 plate carrier rig",
@@ -654,8 +654,8 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.24",
     repaircost: "780",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ee/Wartech_TV-110_plate_carrier_icon.png/revision/latest?cb=20191227004802"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543732963577926/Wartech_TV-110_plate_carrier_icon.webp"
 )
 Armor.create(
     name: "Ars Arma A18 Skanda plate carrier",
@@ -669,8 +669,8 @@ Armor.create(
     ergonomicspenalty: "-9",
     bluntthroughput: "0.195",
     repaircost: "880",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f8/A18_Icon.png/revision/latest?cb=20191214005138"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543821262078132/A18_Icon.webp"
 )
 Armor.create(
     name: "FirstSpear Strandhogg plate carrier rig (Ranger Green)",
@@ -684,8 +684,8 @@ Armor.create(
     ergonomicspenalty: "-3",
     bluntthroughput: "0.242",
     repaircost: "720",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b4/Strandhogg_Icon.png/revision/latest?cb=20211229223247"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543902467997737/Strandhogg_Icon.webp"
 )
 Armor.create(
     name: "ANA Tactical M1 armored rig",
@@ -699,8 +699,8 @@ Armor.create(
     ergonomicspenalty: "-5",
     bluntthroughput: "0.225",
     repaircost: "750",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3c/ANA_Tactical_M1_icon.png/revision/latest?cb=20200422225159"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009543984407908372/ANA_Tactical_M1_icon.webp"
 )
 Armor.create(
     name: "CQC Osprey MK4A plate carrier (Assault, MTP)",
@@ -715,7 +715,7 @@ Armor.create(
     bluntthroughput: "0.18",
     repaircost: "900",
     trader_id: 4,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b0/OspreyMk4_Assault_Icon.png/revision/latest?cb=20211206002249"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544070101737552/OspreyMk4_Assault_Icon.webp"
 )
 Armor.create(
     name: "FORT Redut-M body armor",
@@ -730,7 +730,7 @@ Armor.create(
     bluntthroughput: "0.24",
     repaircost: "937",
     trader_id: 6,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/FORT_Redut-M_body_armor_icon.png/revision/latest?cb=20200318200437"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544150963728404/FORT_Redut-M_body_armor_icon.webp"
 )
 Armor.create(
     name: "IOTV Gen4 body armor (high mobility kit)",
@@ -744,8 +744,8 @@ Armor.create(
     ergonomicspenalty: "-12",
     bluntthroughput: "0.264",
     repaircost: "1600",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/26/Gen4hmk.png/revision/latest?cb=20200318200459"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544232811364504/Gen4hmk.webp"
 )
 
 Armor.create(
@@ -760,8 +760,8 @@ Armor.create(
     ergonomicspenalty: "-14",
     bluntthroughput: "0.264",
     repaircost: "1600",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Gen4assault.png/revision/latest?cb=20200318200452"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544310351470713/Gen4assault.webp"
 )
 Armor.create(
     name: "5.11 Tactical TacTec plate carrier",
@@ -775,8 +775,8 @@ Armor.create(
     ergonomicspenalty: "-3",
     bluntthroughput: "0.195",
     repaircost: "850",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e9/TactecIcon.png/revision/latest?cb=20200422225205"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544386360656012/TactecIcon.webp"
 )
 Armor.create(
     name: "BNTI Gzhel-K body armor",
@@ -791,7 +791,7 @@ Armor.create(
     bluntthroughput: "0.144",
     repaircost: "562",
     trader_id: 6,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/GZHELKArmorIcon.png/revision/latest?cb=20200209203059"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544469839876106/GZHELKArmorIcon.webp"
 )
 Armor.create(
     name: "Ars Arma CPC MOD.2 plate carrier",
@@ -805,8 +805,8 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.165",
     repaircost: "1000",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7c/AACPC_icon.png/revision/latest?cb=20200501235928"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544546784383056/AACPC_icon.webp"
 )
 Armor.create(
     name: "CQC Osprey MK4A plate carrier (Protection, MTP)",
@@ -821,7 +821,7 @@ Armor.create(
     bluntthroughput: "0.165",
     repaircost: "850",
     trader_id: 4,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/11/OspreyMk4_Protection_Icon.png/revision/latest?cb=20211206002404"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544620553797682/OspreyMk4_Protection_Icon.webp"
 )
 Armor.create(
     name: "S&S Precision PlateFrame plate carrier (Goons Edition)",
@@ -835,8 +835,8 @@ Armor.create(
     ergonomicspenalty: "-8",
     bluntthroughput: "0.29",
     repaircost: "890",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/21/S%26S_Precision_PlateFrame_GE_icon.png/revision/latest?cb=20220705231759"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544765882245290/S26S_Precision_PlateFrame_GE_icon.webp"
 )
 Armor.create(
     name: "Crye Precision CPC plate carrier (Goons Edition)",
@@ -850,8 +850,8 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.145",
     repaircost: "900",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/43/CPCGoons.png/revision/latest?cb=20220705230535"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544869343146125/CPCGoons.webp"
 )
 Armor.create(
     name: "FORT Redut-T5 body armor",
@@ -865,8 +865,8 @@ Armor.create(
     ergonomicspenalty: "-14",
     bluntthroughput: "0.24",
     repaircost: "1375",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/23/FORT_Redut-T5_body_armor_icon.png/revision/latest?cb=20200318200444"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009544938540761088/FORT_Redut-T5_body_armor_icon.webp"
 )
 Armor.create(
     name: "NPP KlASS Korund-VM body armor",
@@ -881,7 +881,7 @@ Armor.create(
     bluntthroughput: "0.288",
     repaircost: "1187",
     trader_id: 1,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/KORUNDIcon.png/revision/latest?cb=20201019171750"
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545007453184071/KORUNDIcon.webp"
 )
 Armor.create(
     name: "NPP KlASS Bagariy armored rig",
@@ -895,8 +895,8 @@ Armor.create(
     ergonomicspenalty: "-9",
     bluntthroughput: "0.17",
     repaircost: "700",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f2/NPP_Bagariy_icon.png/revision/latest?cb=20220705234556"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545092769534052/NPP_Bagariy_icon.webp"
 )
 Armor.create(
     name: "IOTV Gen4 body armor (full protection)",
@@ -910,8 +910,8 @@ Armor.create(
     ergonomicspenalty: "-22",
     bluntthroughput: "0.264",
     repaircost: "1600",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/IOTVfullIcon.png/revision/latest?cb=20200318200506"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545162147496056/IOTVfullIcon.webp"
 )
 Armor.create(
     name: "FORT Defender-2 body armor",
@@ -925,8 +925,8 @@ Armor.create(
     ergonomicspenalty: "-7",
     bluntthroughput: "0.24",
     repaircost: "1162",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/52/Defender-2_Icon.png/revision/latest?cb=20200606094109"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545227503145090/Defender-2_Icon.webp"
 )
 Armor.create(
     name: "6B43 6A Zabralo-Sh body armor",
@@ -940,8 +940,8 @@ Armor.create(
     ergonomicspenalty: "-27",
     bluntthroughput: "0.3",
     repaircost: "1562",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/90/FORT_armor_icon.png/revision/latest?cb=20220404223226"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545303000629359/FORT_armor_icon.webp"
 )
 Armor.create(
     name: "BNTI Zhuk-6a body armor",
@@ -955,8 +955,8 @@ Armor.create(
     ergonomicspenalty: "-6",
     bluntthroughput: "0.252",
     repaircost: "1337",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/5c/Zhuk-6a_heavy_armor_icon.png/revision/latest?cb=20190110121834"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545369044123820/Zhuk-6a_heavy_armor_icon.webp"
 )
 Armor.create(
     name: "NFM THOR Integrated Carrier body armor",
@@ -970,8 +970,8 @@ Armor.create(
     ergonomicspenalty: "-20",
     bluntthroughput: "0.276",
     repaircost: "1437",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/00/THOR_IC_Icon.png/revision/latest?cb=20211206001408"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545440049500230/THOR_IC_Icon.webp"
 )
 Armor.create(
     name: "5.11 Tactical Hexgrid plate carrier",
@@ -985,8 +985,8 @@ Armor.create(
     ergonomicspenalty: "-1",
     bluntthroughput: "0.24",
     repaircost: "1187",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/5.11_Hexgrid_plate_carrier.png/revision/latest?cb=20210129120630"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545512120230091/5.11_Hexgrid_plate_carrier.webp"
 )
 Armor.create(
     name: "LBT-6094A Slick Plate Carrier",
@@ -1000,8 +1000,8 @@ Armor.create(
     ergonomicspenalty: "-1",
     bluntthroughput: "0.228",
     repaircost: "1250",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c6/Slick.gif/revision/latest?cb=20220328141454"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545583050100908/Slick.webp"
 )
 Armor.create(
     name: "Crye Precision AVS MBAV (Tagilla Edition)",
@@ -1015,8 +1015,8 @@ Armor.create(
     ergonomicspenalty: "-8",
     bluntthroughput: "0.27",
     repaircost: "890",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fa/MBAV_icon.png/revision/latest?cb=20210701042443"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545675031199765/MBAV_icon.webp"
 )
 Armor.create(
     name: "Tasmanian Tiger SK plate carrier (Multicam Black)",
@@ -1030,8 +1030,8 @@ Armor.create(
     ergonomicspenalty: "-6",
     bluntthroughput: "0.28",
     repaircost: "620",
-    trader_id: nil,
-    image: "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/2b/TT_SK.PNG/revision/latest?cb=20220705233101"
+    trader_id: 7,
+    image: "https://cdn.discordapp.com/attachments/1007749002248327178/1009545746774753402/TT_SK.PNG.webp"
 )
 puts "seeding armor done" 
     Ammo.create(

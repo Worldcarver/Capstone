@@ -1,16 +1,18 @@
 class ArmorsController < ApplicationController
-   before_action :trader_id, only: :showArmors
+   before_action :find_armor, only: [:index, :show]
     
     def index
         render json: Armor.all
     end
 
-   
+   def show
+    render json: @armor
+   end
     
     
     
     private
-    def trader_id
-        @trader = Trader.find(params[:id])
-    end
+   def find_armor
+    @armor = Armor.find(params[:id])
+   end
 end

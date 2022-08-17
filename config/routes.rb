@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   # do
   #   resources :quests, :armors
   # end
-  resources :ammos
-  resources :armors, only: [:index]
+  resources :ammos, only: [:index, :show]
+  resources :armors, only: [:index, :show]
   resources :ammos, only: [:index]
   resources :users
   post "/login", to: "sessions#create"
