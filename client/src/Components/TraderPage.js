@@ -22,22 +22,17 @@ const TraderPage = () =>{
     
     const {name, alias, description, salesCurrency, image, quests} = traderData
         
-    // const questWiki = async () => {
-    // const traderQuestWiki = quests.map((quest) =>
-    //     quest.wiki)
-    //     setTradersQuestWiki(traderQuestWiki)    
-    // }
-    // questWiki([])
-    //     const traderQuestId = quests.map((quest) =>
-    //     quest.id    
-    //     )
-    //     const traderQuestTitle = quests.map((quest) =>
-    //     quest.title
-    //     )
-   // const trader = async () => {
-    // setTradersQuests(traderQuestTitle)
-    // }
-    // console.log(quests)
+   
+    const traderQuestWiki = quests?.map((quest) => {
+        return ( <p>{quest.wiki}</p>)})
+    
+    
+
+    const traderQuestTitle = quests?.map((quest) => {
+        return (<h3>{quest.title}</h3>)})
+        
+        
+  
 return(
     <div className="bgtdrimg">
         
@@ -47,9 +42,9 @@ return(
         <img className="traderpageimg" src={image} alt={alias}/>
             <p> {description} </p>
             <p>Deals in: {salesCurrency}</p>
-            {/* {quests.map((quest) => {
-                <QuestCard key = {quest.id} quest = {quest}/>
-            }) } */}
+                {traderQuestTitle} {traderQuestWiki}
+
+       
     </div>
 )
 
