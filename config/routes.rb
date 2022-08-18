@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :armors
   resources :comments, only: [:show, :create, :update]
   resources :maps, only: [:index, :show]
   resources :quests, only: [:index]
