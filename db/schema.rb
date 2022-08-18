@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_12_183044) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_18_150138) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -49,7 +49,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_12_183044) do
     t.string "bluntthroughput"
     t.string "repaircost"
     t.string "image"
-    t.bigint "trader_id"
+    t.bigint "trader_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["trader_id"], name: "index_armors_on_trader_id"
@@ -99,8 +99,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_12_183044) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "armors", "traders"
   add_foreign_key "comments", "maps"
   add_foreign_key "comments", "users"
   add_foreign_key "quests", "traders"
-  add_foreign_key "armors", "traders"
 end
