@@ -13,7 +13,7 @@ const MapDetail = () => {
     }, []);
     const {name, image} = detailMapData;
 
-
+console.log("hi")
 
     return(
         <div className="bgmapimg">
