@@ -1,8 +1,11 @@
 class CommentsController < ApplicationController
     before_action :find_comment, only: [:update, :destroy, :show]
+    before_action :find_map, only: [:create]
+
+
 
     def index
-        render json: Comment.all(parmas[:map_id])
+        render json: Comment.all
     end
     
     def show
@@ -10,7 +13,9 @@ class CommentsController < ApplicationController
     end
     
     def create
+        map = find_map
         Comment.create!(comment_params)
+        render json: comment, status: :created
     end
     
     def update
@@ -30,7 +35,7 @@ class CommentsController < ApplicationController
     end
 
     def find_comment
-        @comment = Comment.find(params[:user_id])
+        @comment = Comment.find(params[:id])
     end
     
     def comment_params

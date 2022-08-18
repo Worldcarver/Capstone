@@ -11,6 +11,10 @@ class MapsController < ApplicationController
     def show
         render json: find_map
     end
+    def showComments
+        map = @map
+        render json: map.comments
+    end
 
     private
 
