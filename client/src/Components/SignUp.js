@@ -27,6 +27,7 @@ const SignUp = ({ setUser }) => {
         })
         .then(res => res.json())
         .then(user => setUser(user))
+        navigate(`/`)
             //  else {
             //     res.json().then(json => setErrors(Object.entries(json.errors)))
             // }
