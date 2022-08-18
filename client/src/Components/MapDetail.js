@@ -15,12 +15,12 @@ const MapDetail = ({ user }) => {
         .then((res) => res.json())
         .then((data) => setDetailMapData(data))
     }, []);
-    // useEffect(() => {
-    //     fetch(`/maps/${id}/comments`)
-    //     .then(res => res.json())
-    //     .then( async newDat => setComments(newDat))
+    useEffect(() => {
+        fetch(`/maps/${id}/comments`)
+        .then(res => res.json())
+        .then( async newDat => setMapComments(newDat))
 
-    // },[]);
+    },[]);
 
 
     function deleteComment(id){
@@ -32,7 +32,7 @@ const MapDetail = ({ user }) => {
           
         }
     function onSubmit(e){
-    e.preventDefault()
+    // e.preventDefault()
         const comData ={
         text: commentData,
         map_id: id,
@@ -44,7 +44,7 @@ const MapDetail = ({ user }) => {
             body:JSON.stringify(comData)
             })
             .then(r=> r.json())
-            .then(data => setMapComments(data))
+            .then(data => setMapComments([...mapComments, data]))
             // setMapComments(mapComments)
         }
             
