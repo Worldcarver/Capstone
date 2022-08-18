@@ -13,7 +13,7 @@ const Armors = ({ armorsData }) => {
 }
 
 
-
+console.log("test")
 
 
 

@@ -13,6 +13,7 @@ class CreateArmors < ActiveRecord::Migration[7.0]
       t.string :bluntthroughput
       t.string :repaircost
       t.string :image
+      t.belongs_to :trader, null: false, foreign_key: true
 
       t.timestamps
     end

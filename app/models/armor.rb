@@ -1,4 +1,3 @@
 class Armor < ApplicationRecord
-belongs_to :trader
-    
+  belongs_to :trader
 end
