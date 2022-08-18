@@ -98,7 +98,7 @@ function App() {
           />
           <Route 
           path ="/maps/:id"
-          element ={<MapDetail />}/>
+          element ={<MapDetail user = {user}/>}/>
           <Route 
           path="/ammos"
           element={<Ammo ammoData={ammoData}/>}

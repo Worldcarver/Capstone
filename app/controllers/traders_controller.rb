@@ -13,7 +13,7 @@ class TradersController < ApplicationController
     end
 
     def showArmors
-        trader = Trader.first
+        trader = @trader
         render json: trader.armors
     end
     
