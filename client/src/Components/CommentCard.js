@@ -2,7 +2,7 @@ import React, {useState} from "react"
 
 
 
-const CommentCard = ({ comment, user, deleteComment, setMapComments }) => {
+const CommentCard = ({ comment, user, deleteComment, updatedComment }) => {
     const [isShown, setIsShown] = useState(false)
     const [commentData, setCommentData] = useState([])
 
@@ -22,9 +22,8 @@ const CommentCard = ({ comment, user, deleteComment, setMapComments }) => {
               body:JSON.stringify(comData)
             })
             .then(r=> r.json())
-            .then(data => setMapComments(data))
+            .then(data => updatedComment(data))
           }
-
 
     return(
         <div className="commentcard">
@@ -49,20 +48,5 @@ const CommentCard = ({ comment, user, deleteComment, setMapComments }) => {
                 
         </div>
     )
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
 export default CommentCard

@@ -17,6 +17,6 @@ Rails.application.routes.draw do
   get "/me", to: "users#show"
   get "/traders/:id/quests", to: "quests#showQuests"
   get "/traders/:id/armors", to: "traders#showArmors"
-  get "/maps/:id/comments", to: "maps#showComments"
+  get "/maps/:id/comments", to: "comments#showComments"
   post "/maps/:id/comments", to: "comments#create"
 end

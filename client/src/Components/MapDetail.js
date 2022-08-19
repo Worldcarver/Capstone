@@ -5,8 +5,8 @@ import CommentCard from "./CommentCard";
 
 const MapDetail = ({ user }) => {
     const [detailMapData, setDetailMapData] = useState([]);
-    const [mapComments, setMapComments] = useState([]);
-    const [commentData, setCommentData] = useState([]);
+    const [mapComments, setMapComments] = useState([]); //comments
+    const [commentData, setCommentData] = useState([]); //form
     const {id} = useParams();
 
 
@@ -18,21 +18,30 @@ const MapDetail = ({ user }) => {
     useEffect(() => {
         fetch(`/maps/${id}/comments`)
         .then(res => res.json())
-        .then( async newDat => setMapComments(newDat))
+        .then( newDat => setMapComments(newDat))
 
     },[]);
 
+    function updatedComment(fixedComment){
+        const editedComments = mapComments.map((comment) => { 
+            if (comment.id === fixedComment.id) {
+               return fixedComment 
+            }else
+            return comment
+        })
+        setMapComments(editedComments)
+    }
 
     function deleteComment(id){
-        const deletedComment = comments.filter((comment) => comment.id !== id)
-          setMapComments(deletedComment)
+        const deletedComment = mapComments.filter((comment) => comment.id !== id)
+        setMapComments(deletedComment)
           fetch(`/comments/${id}`, {
             method: 'DELETE'
           })
           
         }
     function onSubmit(e){
-    // e.preventDefault()
+    e.preventDefault()
         const comData ={
         text: commentData,
         map_id: id,
@@ -45,7 +54,6 @@ const MapDetail = ({ user }) => {
             })
             .then(r=> r.json())
             .then(data => setMapComments([...mapComments, data]))
-            // setMapComments(mapComments)
         }
             
 
@@ -53,7 +61,7 @@ const MapDetail = ({ user }) => {
         setCommentData(e.target.value)
         }
 
-    const {name, image, comments} = detailMapData;
+    const {name, image} = detailMapData;
 
 
 
@@ -77,8 +85,8 @@ const MapDetail = ({ user }) => {
         
                 <button type ="submit" >SUBMIT</button>
             </form>
-            {comments?.map(comment => {
-                return <CommentCard key={comment.id} comment={comment} user = {user} deleteComment={deleteComment} setMapComments={setMapComments} />
+            {mapComments?.map(comment => {
+                return <CommentCard key={comment.id} comment={comment} user = {user} deleteComment={deleteComment} updatedComment = {updatedComment} />
       })}
             
         </div>

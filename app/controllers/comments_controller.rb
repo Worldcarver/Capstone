@@ -12,10 +12,16 @@ class CommentsController < ApplicationController
         render json: @comment
     end
     
+    def showComments
+        map = Map.find(params[:id])
+        comments = map.comments
+        render json: comments
+    end
+
     def create
         # map = @map
-        Comment.create!(comment_params)
-        render json: @comment, status: :created
+        comment = Comment.create!(comment_params)
+        render json: comment, status: :created
     end
     
     def update
