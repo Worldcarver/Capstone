@@ -67,12 +67,7 @@ const MapDetail = ({ user }) => {
 
     return(
         <div className="bgmapimg">
-            
-            <h1 className="mapname">
-                {name}
-            </h1>
-            <img className="mappageimg" src={image} alt={name}/>
-            <form className="comment" onSubmit={onSubmit}>
+              <form className="comment" onSubmit={onSubmit}>
             <h2>COMMENTS</h2>
                 <label>
                     <input type="text" text="text"  placeholder="Add a Comment..."    onChange = {handleChange} />
@@ -80,6 +75,11 @@ const MapDetail = ({ user }) => {
         
                 <button type ="submit" >SUBMIT</button>
             </form>
+            <h1 className="mapname">
+                {name}
+            </h1>
+            <img className="mappageimg" src={image} alt={name}/>
+          
             {mapComments?.map(comment => {
                 return <CommentCard key={comment.id} comment={comment} user = {user} deleteComment={deleteComment} updatedComment = {updatedComment} />
       })}
