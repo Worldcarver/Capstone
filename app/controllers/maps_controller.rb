@@ -9,12 +9,9 @@ class MapsController < ApplicationController
     end
     
     def show
-        render json: find_map
+        render json: @map
     end
-    def showComments
-        map = @map
-        render json: map.comments
-    end
+ 
 
     private
 

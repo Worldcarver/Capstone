@@ -59,19 +59,6 @@ function App() {
 
 
 
-
-
-
-
-
-
-
-
-
-
- //make login page home with create account button
-
-
   return (
     <>
     <div>
