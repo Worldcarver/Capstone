@@ -24,12 +24,12 @@ const TraderPage = () =>{
         
    
     const traderQuestWiki = quests?.map((quest) => {
-        return ( <p>{quest.wiki}</p>)})
+        return ( <a href = {quest.wiki}>{quest.wiki}</a>)})
     
     
 
     const traderQuestTitle = quests?.map((quest) => {
-        return (<h3>{quest.title}</h3>)})
+        return (<tr>{quest.title}</tr>)})
         
         
   
@@ -42,7 +42,9 @@ return(
         <img className="traderpageimg" src={image} alt={alias}/>
             <p> {description} </p>
             <p>Deals in: {salesCurrency}</p>
-                {traderQuestTitle} {traderQuestWiki}
+               <table className="questtable">
+               {traderQuestTitle} {traderQuestWiki}
+               </table>
 
        
     </div>
