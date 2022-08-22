@@ -72,11 +72,6 @@ const MapDetail = ({ user }) => {
                 {name}
             </h1>
             <img className="mappageimg" src={image} alt={name}/>
-
-
-
-
-
             <form className="comment" onSubmit={onSubmit}>
             <h2>COMMENTS</h2>
                 <label>
