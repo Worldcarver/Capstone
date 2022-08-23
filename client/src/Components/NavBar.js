@@ -14,20 +14,22 @@ function NavBar({ user, setUser }) {
     <nav className='navbar'>
    
       <div>
-      <Link to="/">HOME</Link>
-      <Link to="/traders">Traders</Link>
-      <Link to="/maps">Maps</Link>
-      <Link to="/ammos">Ammo</Link>
-      <Link to="/armors">Armor</Link>
+      
       </div>
       <div>
         {user ? (
+          <div>
            <Link to="/" onClick={handleLogoutClick}>LOGOUT</Link>
-           
+             
+          <Link to="/">HOME</Link>
+          <Link to="/traders">Traders</Link>
+          <Link to="/maps">Maps</Link>
+          <Link to="/ammos">Ammo</Link>
+          <Link to="/armors">Armor</Link>
+          </div>
         ) : (
           <>
-      <Link to="/signup">SIGN-UP</Link>
-            <Link to="/login">LOGIN</Link>
+  
           </>
         )}
         

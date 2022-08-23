@@ -11,7 +11,7 @@ const AmmoPage = () => {
         .then((data) => setOneAmmoData(data))
     }, []);
 
-    const {name, shortName, weight, caliber, stackMaxSize, tracer, tracerColor, projectileCount, damage, armorDamage, fragmentationChance, ricochetChance, penetrationPower, penetrationChance, accuracy, recoil, initialSpeed} = oneAmmoData
+    const {name, shortName, weight, caliber, stackMaxSize, projectileCount, damage, armorDamage, fragmentationChance, ricochetChance, penetrationPower, penetrationChance, accuracy, recoil, initialSpeed} = oneAmmoData
     return (
         <table className="ammo-chart">
             <thead>
@@ -20,8 +20,6 @@ const AmmoPage = () => {
                     <tr>Weight: {weight}</tr>
                     <tr>Caliber: {caliber}</tr>
                     <tr>Stack Size: {stackMaxSize}</tr>
-                    <tr>Tracer: {tracer}</tr>
-                    <tr>Tracer Color: {tracerColor}</tr>
                     <tr>Number of Projectiles: {projectileCount}</tr>
                     <tr>Damage: {damage}</tr>
                     <tr>Damage to Armor: {armorDamage}</tr>

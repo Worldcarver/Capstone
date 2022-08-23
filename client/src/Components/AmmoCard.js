@@ -6,10 +6,10 @@ const AmmoCard = ({ ammo }) => {
 
 
     return (
-        <div>
-            <ul>
-            <Link to={`/ammos/${ammo.id}`}> <li>{ammo.name}</li></Link>
-            </ul>
+        <div className="ammo-link">
+            
+            <Link to={`/ammos/${ammo.id}`}> {ammo.name}</Link>
+        
         </div>
     )
 

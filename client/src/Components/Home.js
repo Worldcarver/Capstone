@@ -1,21 +1,31 @@
 import React from "react";
-import { Timeline, eagerLoadTwitterLibrary  } from 'react-twitter-widgets'
+import video from "./images/video.mp4"
+import { Link } from 'react-router-dom'
+import {  eagerLoadTwitterLibrary  } from 'react-twitter-widgets'
 function Home({ user }) {
     if (user) {
       eagerLoadTwitterLibrary()
       return (
         <section>
         <div className="logged-in-home">
+        <video autoPlay loop muted
+        style={{
+          position: "absolute",
+          width: "100%",
+          left: "50%",
+          top: "50%",
+          height: "100%",
+          objectFit: "cover",
+          transform: "translate(-50%, -50%)",
+          zIndex: "-1",
+        }}>
+      <source src={video} type="video/mp4"/>
+        </video>
+          
           <h2 class="home_title2">Welcome Back, {user.username}!</h2>
-          <Timeline
-          dataSource={{
-          sourceType: 'profile',
-          screenName: 'bstategames'
-          }}
-          options={{
-          height: '800'
-          }}
-          />
+          <div className="twitter-widget-holder">
+          <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark" href="https://twitter.com/bstategames?ref_src=twsrc%5Etfw">Tweets by bstategames</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
         </div>
         </section>
       );
@@ -23,7 +33,25 @@ function Home({ user }) {
       return (
         <section>
         <div className="signup-home">
-          <h2 className="home_title">Please Login or Sign-up</h2>
+        <video autoPlay loop muted
+        style={{
+          position: "absolute",
+          width: "100%",
+          left: "50%",
+          top: "50%",
+          height: "100%",
+          objectFit: "cover",
+          transform: "translate(-50%, -50%)",
+          zIndex: "-1",
+        }}>
+      <source src={video} type="video/mp4"/>
+        </video>
+        <div className="signuphome">
+        <Link to ="/signup">Sign Up</Link>
+        </div>
+        <div className="loginhome">
+        <Link to ="/login">Login</Link>
+        </div> 
         </div>
         </section>
       );
@@ -32,3 +60,5 @@ function Home({ user }) {
   
   export default Home;
   
+
+  // <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark" href="https://twitter.com/bstategames?ref_src=twsrc%5Etfw">Tweets by bstategames</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
