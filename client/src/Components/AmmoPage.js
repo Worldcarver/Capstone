@@ -13,6 +13,7 @@ const AmmoPage = () => {
 
     const {name, shortName, weight, caliber, stackMaxSize, projectileCount, damage, armorDamage, fragmentationChance, ricochetChance, penetrationPower, penetrationChance, accuracy, recoil, initialSpeed} = oneAmmoData
     return (
+        <div className="ammo-detail-bg">
         <table className="ammo-chart">
             <thead>
                 
@@ -34,6 +35,7 @@ const AmmoPage = () => {
                 
             </thead>
         </table>
+        </div>
     )
 
 

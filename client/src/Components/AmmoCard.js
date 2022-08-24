@@ -2,14 +2,9 @@ import { Link } from "react-router-dom"
 
 const AmmoCard = ({ ammo }) => {
 
-    
-
-
     return (
-        <div className="ammo-link">
-            
-            <Link to={`/ammos/${ammo.id}`}> {ammo.name}</Link>
-        
+        <div className="ammo-link-div">
+            <Link className="ammo-link" to={`/ammos/${ammo.id}`}> <span >{ammo.name}</span></Link>
         </div>
     )
 

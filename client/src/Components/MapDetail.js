@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import CommentCard from "./CommentCard";
 
 
+
 const MapDetail = ({ user }) => {
     const [detailMapData, setDetailMapData] = useState([]);
     const [mapComments, setMapComments] = useState([]); //comments
@@ -68,19 +69,21 @@ const MapDetail = ({ user }) => {
     return(
         <div className="bgmapimg">
           
+          
             <h1 className="mapname">
                 {name}
             </h1>
             <img className="mappageimg" src={image} alt={name}/>
-            
+            <div className="commentdiv">
               <form className="comment" onSubmit={onSubmit}>
-            <h2>COMMENTS</h2>
+            <h2 className="commentheader"  >COMMENTS</h2>
                 <label>
                     <input type="text" text="text"  placeholder="Add a Comment..."    onChange = {handleChange} />
                 </label>
         
                 <button type ="submit" >SUBMIT</button>
             </form>
+            </div>
             {mapComments?.map(comment => {
                 return <CommentCard key={comment.id} comment={comment} user = {user} deleteComment={deleteComment} updatedComment = {updatedComment} />
       })}

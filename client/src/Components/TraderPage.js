@@ -35,25 +35,24 @@ const TraderPage = () =>{
   
 return(
     <div className="bgtdrimg">
-        
-        <h1 className="tdrtitle">
+        <div className="tdrtitleimg">
+        <h3 className="tdrtitle">
             {name}, AKA: {alias}
-        </h1>
+        </h3>
         <img className="traderpageimg" src={image} alt={alias}/>
             <p className="traderdesc"> {description} </p>
             <p className="traderdesc">Deals in: {salesCurrency}</p>
-            
+        </div>
+        <div className="traderquesttitle">    
             <h3 className="questtitle">Quests</h3>
-               <table className="questtable">
-                
-            <thead >
-                
-                <th className="title">{traderQuestTitle}</th>
-                <th className="wiki">{traderQuestWiki}</th>
+            <table className="questtable">  
+            <thead>
+                <th className="thtitle">{traderQuestTitle}</th>
+                <th className="thwiki">{traderQuestWiki}</th>
             </thead>
                
             </table>
-       
+       </div>
     </div>
 )
 

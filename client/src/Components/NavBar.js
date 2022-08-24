@@ -18,14 +18,15 @@ function NavBar({ user, setUser }) {
       </div>
       <div>
         {user ? (
-          <div>
-           <Link to="/" onClick={handleLogoutClick}>LOGOUT</Link>
+          <div className="navbartext">
+           <Link onClick={handleLogoutClick} to="/" >LOGOUT</Link>
              
           <Link to="/">HOME</Link>
-          <Link to="/traders">Traders</Link>
-          <Link to="/maps">Maps</Link>
-          <Link to="/ammos">Ammo</Link>
-          <Link to="/armors">Armor</Link>
+          <Link to="/traders">TRADERS</Link>
+          <Link to="/maps">MAPS</Link>
+          <Link to="/ammos">AMMO</Link>
+          <Link to="/armors">ARMOR</Link>
+          <h2 className="home_title2">Welcome Back, {user.username}!</h2>
           </div>
         ) : (
           <>

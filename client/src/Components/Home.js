@@ -8,6 +8,7 @@ function Home({ user }) {
       return (
         <section>
         <div className="logged-in-home">
+          <img src ='https://cdn.discordapp.com/attachments/1007749002248327178/1011764313767284847/logo.png' alt = 'logo' className="tarkovlogo"/>
         <video autoPlay loop muted
         style={{
           position: "absolute",
@@ -22,9 +23,9 @@ function Home({ user }) {
       <source src={video} type="video/mp4"/>
         </video>
           
-          <h2 class="home_title2">Welcome Back, {user.username}!</h2>
+          
           <div className="twitter-widget-holder">
-          <a class="twitter-timeline" data-width="400" data-height="600" data-theme="dark" href="https://twitter.com/bstategames?ref_src=twsrc%5Etfw">Tweets by bstategames</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-width="600" data-height="800" data-theme="dark" href="https://twitter.com/bstategames?ref_src=twsrc%5Etfw">Tweets by bstategames</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         </div>
         </section>
@@ -46,11 +47,11 @@ function Home({ user }) {
         }}>
       <source src={video} type="video/mp4"/>
         </video>
-        <div className="signuphome">
-        <Link to ="/signup">Sign Up</Link>
+        <div className="signupbox">
+        <Link className="signuphome" to ="/signup">Sign Up</Link>
         </div>
-        <div className="loginhome">
-        <Link to ="/login">Login</Link>
+        <div className="loginbox">
+        <Link className="loginhome" to ="/login">Login</Link>
         </div> 
         </div>
         </section>

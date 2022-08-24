@@ -4,7 +4,7 @@ const Ammo = ({ ammoData }) => {
 
 
     return (
-        <div>
+        <div className='ammo-page-background'>
             <div className="ammo-wrapper">
                 {ammoData.map(ammo => {
                     return <AmmoCard key = {ammo.id} ammo = {ammo}/>
