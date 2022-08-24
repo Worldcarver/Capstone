@@ -3,7 +3,7 @@ import ArmorCard from "./ArmorCard"
 const Armors = ({ armorsData }) => {
     return (
         <div className = "armorbg">
-            <div className="card-wrapper">
+            <div className="armor-card-wrapper">
                 {armorsData.map(armor => {
                     return <ArmorCard key = {armor.id} armor = {armor}/>
                 })}

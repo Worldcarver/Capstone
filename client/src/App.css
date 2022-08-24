@@ -185,15 +185,111 @@
     align-items: center;
     box-shadow: 0 0 100px #000000, 0 0 6px hsl(40deg 73% 66% / 80%);
 }
-.comment{
+
+.mapname {
+  font-family: 'Friz Quadrata Std', sans-serif;
+  text-shadow: 3px 3px #000000;
+  color:#EDB852;
+  text-decoration: none;
+  font-size: 40px;
   text-align: center;
 }
-.commentdiv{
+.mapdisplaybg {
+  background-image: url('https://cdn.discordapp.com/attachments/1007749002248327178/1011721302433869925/shoreline-road-at-railbridge-extract.webp' );
+  background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+}
+.mapName{
+  color:#EDB852;
+  font-family: 'Friz Quadrata Std', sans-serif;
+  text-shadow: 3px 3px #000000;
+  font-size: 22px;
+}
+
+.commentcard {
+  text-align: center;
+}
+
+.commentcard h2 {
+  color:#EDB852;
+  font-family: 'Friz Quadrata Std', sans-serif;
+  text-shadow: 3px 3px #000000;
+  font-size: 22px;
+}
+
+.commentcard p {
+  font-size: 15px;
+  font-family: 'Friz Quadrata Std', sans-serif;
+  width: 400px;
+  height: max-content;
+  background-color: #000000;
+  color: #c2b191;
+  border: solid 1px #a37e38;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  word-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+ .editbutton {
+  font-family: 'Friz Quadrata Std', sans-serif;
+  color:#c2b191;
+  background: #232525;
+  border-color: #EDB852;
+  height: 28px;
+  width: 60px;
+  text-shadow: none;
+  font-size: 14px;
+  cursor: pointer;
+ }
+
+ .deletebutton {
+  margin-left: 15px;
+  font-family: 'Friz Quadrata Std', sans-serif;
+  color:#c2b191;
+  background: #232525;
+  border-color: #EDB852;
+  height: 28px;
+  width: 70px;
+  text-shadow: none;
+  font-size: 14px;
+  cursor: pointer;
+ }
+
+
+
+ .editme input {
+  height: 28px;
+  width: 260px;
+  background-color: #000000;
+  color: #c2b191;
+  border: solid 1px #a37e38;
+  padding-left:10px;
+  padding-right: 10px;
+  font-size: 15px;
+ }
+ 
+ .editme button {
+  margin-left: 10px;
+  font-size: 15px;
+  width: 75px;
+  height: 30px;
+ }
+.comment {
+  text-align: center;
+}
+.commentdiv {
   margin-right: auto;
   margin-left: auto;
   align-items: center;
 }
-.commentheader{
+.commentheader {
   font-family: 'Friz Quadrata Std', sans-serif;
   text-shadow: 2px 2px #000000;
   color:#EDB852;
@@ -393,4 +489,76 @@ height: 100vh;
 overflow-y: scroll;
 position: absolute;
 width: 100%;
+}
+.armorbg{
+  background-image: url('https://cdn.discordapp.com/attachments/1007749002248327178/1012042624309411980/armorbg.png');
+  background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+}
+.armor-name{
+  font-family: 'Friz Quadrata Std', sans-serif;
+  text-shadow: 2px 2px #000000;
+  color:#EDB852;
+  text-decoration: none;
+  font-size: 13px;
+  text-align: center;
+}
+.armor-card-wrapper{
+  width: 98.97%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  text-align: center;
+}
+.bgarmorimg{
+  background-image: url('https://cdn.discordapp.com/attachments/1007749002248327178/1012042624309411980/armorbg.png');
+  background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+}
+.armorname{
+  font-family: 'Friz Quadrata Std', sans-serif;
+  text-shadow: 3px 3px #000000;
+  color:#EDB852;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+}
+.armorpageimg{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  border: 2px solid #EDB852;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 100px #000000, 0 0 6px hsl(40deg 73% 66% / 80%);
+}
+.armor-chart{
+  font-family: 'Friz Quadrata Std', sans-serif;
+  width: auto;
+  border: 3px solid;
+  border-color: #EDB852;
+  color:#c2b191;
+  text-shadow: 2px 2px #000000;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  table-layout: fixed;
+  background: #1d1c1c
 }
