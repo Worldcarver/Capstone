@@ -26,7 +26,7 @@ function NavBar({ user, setUser }) {
           <Link to="/maps">MAPS</Link>
           <Link to="/ammos">AMMO</Link>
           <Link to="/armors">ARMOR</Link>
-          <h2 className="home_title2">Welcome Back, {user.username}!</h2>
+          <h2 className="home_title2"> {user.username}</h2>
           </div>
         ) : (
           <>

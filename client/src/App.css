@@ -562,3 +562,16 @@ width: 100%;
   table-layout: fixed;
   background: #1d1c1c
 }
+.refreshbutton{
+  font-family: 'Friz Quadrata Std', sans-serif;
+  color:#c2b191;
+  background: #232525;
+  border-color: #EDB852;
+  height: 20px;
+  width: 125px;
+  font-weight: bold;
+  text-shadow: none;
+  margin-top: 0px;
+  font-size: 10px;
+  cursor: pointer;
+}

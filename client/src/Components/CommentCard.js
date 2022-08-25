@@ -28,7 +28,7 @@ const CommentCard = ({ comment, user, deleteComment, updatedComment }) => {
     return(
         <div className="commentcard">
             
-            <h2>{user.username}</h2>
+            <h2>{comment.user.username}</h2>
             <br></br>
             <p>{comment.text}</p>
             <br></br>

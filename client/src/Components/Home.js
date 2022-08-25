@@ -3,7 +3,15 @@ import video from "./images/video.mp4"
 import { Link } from 'react-router-dom'
 import {  eagerLoadTwitterLibrary  } from 'react-twitter-widgets'
 function Home({ user }) {
-    if (user) {
+  function refreshPage() {
+    window.location.reload(false);
+  }
+  
+    
+  if (user) {
+
+
+
       eagerLoadTwitterLibrary()
       return (
         <section>
@@ -22,10 +30,12 @@ function Home({ user }) {
         }}>
       <source src={video} type="video/mp4"/>
         </video>
-          
+        
           
           <div className="twitter-widget-holder">
-          <a class="twitter-timeline" data-width="600" data-height="800" data-theme="dark" href="https://twitter.com/bstategames?ref_src=twsrc%5Etfw">Tweets by bstategames</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            
+          <a class="twitter-timeline" data-width="600" data-height="800" data-theme="dark" href="https://twitter.com/bstategames?ref_src=twsrc%5Etfw">Tweets by bstategames</a>
+          <button onClick={refreshPage} className = 'refreshbutton'>Feed not loading?</button> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         </div>
         </section>
